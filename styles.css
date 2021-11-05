@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
 }
 
-.flexBar{
+#flexBar {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -28,19 +28,19 @@ body {
     }
   }
 
-.nameBar{
+#nameBar {
     /*background-color: #f1f1f1;*/
     padding: 10px;
     flex: 50%;
     text-align: left;
 }
 
-.nameBar > a{
+#nameBar > a {
     text-decoration: none;
     color: black;
 }
 
-.navBar {
+#navBar {
     /*background-color: dodgerblue;*/
     padding: 10px;
     flex: 50%;
@@ -50,17 +50,21 @@ body {
     font-size: 0.75em;
 }
 
-#navItem {
+.navItem {
     margin: 0 auto;
     text-align: right;
     color: #645e6b;
 }
 
-#selected{
+.selected {
     color: white;
 }
 
-strong{
+.selected:hover {
+    color: white;
+}
+
+strong {
     background-color: #66ddaa;
     color: white;
 }
