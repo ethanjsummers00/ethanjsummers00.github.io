@@ -9,6 +9,7 @@ a:hover {
     color: #868f97;
 }
 
+
 body {
     margin: 0 auto;
 }
@@ -34,6 +35,11 @@ body {
     text-align: left;
 }
 
+.nameBar > a{
+    text-decoration: none;
+    color: black;
+}
+
 .navBar {
     /*background-color: dodgerblue;*/
     padding: 10px;
@@ -48,7 +54,10 @@ body {
     margin: 0 auto;
     text-align: right;
     color: #645e6b;
+}
 
+#selected{
+    color: white;
 }
 
 strong{
