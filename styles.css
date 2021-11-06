@@ -16,6 +16,10 @@ a:hover {
 
 body {
     margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 #flexBar {
@@ -26,13 +30,29 @@ body {
     font-size: 2.5em;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #868f97;
+}
+
 @media (max-width: 800px) {
-    .flexBar {
+    #flexBar {
       flex-direction: column;
+    }
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    #sideImg{
+        display: none;
     }
   }
 
-h1{
+h1 {
     margin: 0 auto;
 }
 
