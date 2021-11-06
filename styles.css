@@ -9,6 +9,10 @@ a:hover {
     color: #868f97;
 }
 
+#aboutText {
+    flex: 60%;
+    padding: 20px;
+}
 
 body {
     margin: 0 auto;
@@ -27,6 +31,17 @@ body {
       flex-direction: column;
     }
   }
+
+h1{
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'Roboto', sans-serif;
+}
 
 #nameBar {
     /*background-color: #f1f1f1;*/
@@ -56,12 +71,28 @@ body {
     color: #645e6b;
 }
 
+p{
+    font-size: 1.5em;
+}
+
+#profileImg {
+    margin-left: auto;
+    width: 400px;
+    height: 600px;
+}
+
 .selected {
     color: white;
 }
 
 .selected:hover {
     color: white;
+}
+
+#sideImg {
+    flex: 40%;
+    padding: 20px;
+    text-align: center; 
 }
 
 strong {
