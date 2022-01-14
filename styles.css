@@ -11,7 +11,9 @@ a:hover {
 
 #aboutText {
     flex: 60%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 1%;
+    margin: auto;
 }
 
 #aboutText h1 {
@@ -75,11 +77,20 @@ body {
       flex-direction: column;
     }
 
-    .main{
+    .main {
         flex-direction: column-reverse;
     }
 
-    #sideImg{
+    #navBar {
+        padding-left: 1%;
+        display: none;
+    }
+    
+    .navItem{
+        display: none;
+    }
+
+    #sideImg {
         display: none;
     }
   }
@@ -97,7 +108,10 @@ h1 {
 
 #nameBar {
     /*background-color: #f1f1f1;*/
-    padding: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1%;
     flex: 50%;
     text-align: left;
 }
@@ -128,7 +142,9 @@ p{
 }
 
 #profileImg {
-    margin-left: auto;
+    flex: 40%;
+    padding-top: 7.5%;
+    margin: auto;
     width: 400px;
     height: 600px;
 }
