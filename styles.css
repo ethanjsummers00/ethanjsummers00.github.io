@@ -14,12 +14,28 @@ a:hover {
     padding: 20px;
 }
 
+#aboutText h1 {
+    font-size: 3em;
+    color: #cb503c;
+}
+
+#aboutText p {
+    font-size: 1.75em;
+}
+
 body {
     margin: 0 auto;
     height: 100%;
     display: flex;
     flex: 1;
     flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #flexBar {
@@ -30,12 +46,28 @@ body {
     font-size: 2.5em;
 }
 
-footer {
+.footer {
     display: flex;
     flex-direction: row;
-    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #66ddaa;
     font-family: 'Roboto', sans-serif;
-    background-color: #868f97;
+    color: white;
+}
+
+.footLeft{
+    flex: 1;
+    text-align: start;
+    padding-left: 1%;
+}
+
+.footRight{
+    flex: 1;
+    text-align: end;
+    padding-right: 1%;
 }
 
 @media (max-width: 800px) {
