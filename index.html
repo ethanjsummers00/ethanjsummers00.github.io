@@ -6,11 +6,17 @@
         <meta name="description" content="Ethan Summers' Website">
         <link rel="stylesheet" href="styles.css">
         <script>
-            var year = (new Date()).getFullYear();
-            var month = (new Date()).getMonth();
-            var day = (new Date()).getDate();
+            //var year = (new Date()).getFullYear();
+            //var month = (new Date()).getMonth();
+            //var day = (new Date()).getDate();
             
-            console.log(month + 1, day, year);
+            //console.log(month + 1, day, year, age);
+
+            //if(month == 10, day == 1) {
+                //age ++;
+            //}
+
+            //document.write(age);
         </script> 
     </head>
     <body>
@@ -32,11 +38,15 @@
                 </div>
                 <div id="aboutText">
                     <h1>Hi!</h1>
-                    <p>I am Ethan Summers, a 21 year old student studying Graphic Information Technology and Human Systems Engineering at Arizona State University.
+                    <p>I am Ethan Summers, a <span id="myAge"></span> year old student studying Graphic Information Technology and Human Systems Engineering at Arizona State University.
                     I am someone who is interested in a wide variety of design mediums such as video editing, graphic design, and web design. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Morbi scelerisque velit ut metus iaculis, a volutpat mauris porta. Aliquam placerat nulla id metus euismod, ut tincidunt nibh rhoncus. Nam a suscipit mi, a ornare est.
                     Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce et purus quis nisi tristique feugiat. Aliquam tempus massa non enim vehicula, eu mattis justo porttitor. Suspendisse dictum magna non vulputate dapibus. Proin condimentum, odio vitae fringilla tempor, orci augue ultricies nisl,
                     at dapibus arcu enim vel dolor. Mauris facilisis, tellus a dictum sollicitudin, libero turpis aliquet arcu, ultrices rhoncus erat neque non odio. Nam dictum turpis mi, at mollis arcu aliquet ac. Nulla facilisi. Morbi ornare tempor pretium. </p>
+                    <script>
+                        var age = 21;
+                        document.getElementById("myAge").innerHTML = age;
+                    </script>
                 </div>
             </div>
         </div>
