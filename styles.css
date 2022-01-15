@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
+@media (max-width: 800px) {
+    #flexBar {
+      flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    #navBar {
+        padding-left: 1%;
+        display: none;
+    }
+    
+    .navItem{
+        display: none;
+    }
+
+    #sideImg {
+        display: none;
+    }
+  }
+
+
 a {
     text-decoration: none;
     color: #645e6b;
@@ -38,6 +62,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 80%;
 }
 
 #flexBar {
@@ -71,29 +96,6 @@ body {
     text-align: end;
     padding-right: 1%;
 }
-
-@media (max-width: 800px) {
-    #flexBar {
-      flex-direction: column;
-    }
-
-    .main {
-        flex-direction: column-reverse;
-    }
-
-    #navBar {
-        padding-left: 1%;
-        display: none;
-    }
-    
-    .navItem{
-        display: none;
-    }
-
-    #sideImg {
-        display: none;
-    }
-  }
 
 h1 {
     margin: 0 auto;
