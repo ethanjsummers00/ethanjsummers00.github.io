@@ -42,10 +42,7 @@ a:hover {
     margin: auto;
 }
 
-#aboutText h1 {
-    font-size: 3em;
-    color: #cb503c;
-}
+
 
 #aboutText p {
     font-size: 1.75em;
@@ -57,14 +54,6 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
 }
 
 #flexBar {
@@ -126,6 +115,11 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
+}
+
+.main h1 {
+    font-size: 3em;
+    color: #cb503c;
 }
 
 #nameBar {
