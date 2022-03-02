@@ -1,3 +1,4 @@
+/*roboto font from Google, icons from https://fontawesome.com/*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*mobile width rules*/
@@ -7,8 +8,15 @@
         flex-direction: column-reverse;
     }
 
-    #flexbar #nameBar > a {    
+    nav #nameBar > a {    
         padding-left: 5%;
+    }
+
+    nav #navMenu {
+        display: block;
+        visibility: visible;
+        padding: 3%;
+        color: #645e6b;
     }
 
     .navItem{
@@ -52,14 +60,6 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-}
-
-#flexBar {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
 }
 
 .footer {
@@ -172,6 +172,14 @@ h1 {
     color: black;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
 #navBar {
     padding: 10px;
     flex: 50%;
@@ -186,6 +194,11 @@ h1 {
     text-align: right;
     color: #645e6b;
 }
+
+#navMenu {
+    display: none;
+    visibility: hidden;
+}   
 
 p{
     font-size: 1.5em;

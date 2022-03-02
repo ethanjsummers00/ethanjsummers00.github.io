@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Ethan Summers' Website">
-        <link rel="stylesheet" href="styles.css">
-        <link href="/css/all.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" >
+        <link href="/fa-css/all.css" rel="stylesheet">
     </head>
     <body>
-        <div id="flexBar">
+        <nav>
             <div id="nameBar">
                 <a href="index.html"><strong>Ethan</strong>Summers</a>
             </div>
@@ -18,7 +18,10 @@
                 <div class="navItem"><a href="portfolio.html">Portfolio</a></div>
                 <div class="navItem"><a href="socialMedia.html">Links</a></div>
             </div>
-        </div>
+            <div id="navMenu">
+                <span><i class="fab fa-hamburger"></i></span>
+            </div>
+        </nav>
             <div class="main">
                 <div id="sideImg">
                     <img src="img/testImg.png" alt="picture of Ethan Summers" id="profileImg">
@@ -31,21 +34,7 @@
                     Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce et purus quis nisi tristique feugiat. Aliquam tempus massa non enim vehicula, eu mattis justo porttitor.
                     Suspendisse dictum magna non vulputate dapibus. Proin condimentum, odio vitae fringilla tempor, orci augue ultricies nisl, at dapibus arcu enim vel dolor. Mauris facilisis, tellus a dictum sollicitudin,
                     libero turpis aliquet arcu, ultrices rhoncus erat neque non odio. Nam dictum turpis mi, at mollis arcu aliquet ac. Nulla facilisi. Morbi ornare tempor pretium. </p>
-                    <script>
-                        var year = (new Date()).getFullYear();
-                        var month = (new Date()).getMonth();
-                        var day = (new Date()).getDate();
-                        var age = 0;
-
-                        if (month >= 10){
-                            age += year - 2021;
-                        }
-                        else {
-                            age = year - 2001;
-                        }
-
-                        document.getElementById("myAge").innerHTML = age;
-                    </script>
+                    <script src="scripts.js"></script>
                 </div>
             </div>
         <div class="footer">
