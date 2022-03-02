@@ -8,6 +8,13 @@
         <link href="/fa-css/all.css" rel="stylesheet">
     </head>
     <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 3em;">&times;</a>
+            <a href="index.html">Home</a>
+            <strong><a href="resume.html">Resume</a></strong>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="socialMedia.html">Links</a>
+        </div>
         <nav>
             <div id="nameBar">
                 <a href="index.html"><strong>Ethan</strong>Summers</a>
@@ -17,6 +24,9 @@
                 <div class="navItem"><strong><a href="resume.html" class="selected">Resume</a></strong></div>
                 <div class="navItem"><a href="portfolio.html">Portfolio</a></div>
                 <div class="navItem"><a href="socialMedia.html">Links</a></div>
+            </div>
+            <div id="navMenu">
+                <span onclick="openNav()">&#8801;</span>
             </div>
         </nav>
         <div class="footer">
@@ -29,5 +39,6 @@
                 <p>ethanjsummers00@gmail.com</p>
             </div>
         </div>
+        <script src="scripts.js"></script>
     </body>
 </html>

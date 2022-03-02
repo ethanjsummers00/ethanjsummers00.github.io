@@ -36,6 +36,7 @@
   }
 
 /*global rules*/
+/*remember Ethan: padding is TRBL*/
 a {
     text-decoration: none;
     color: #645e6b;
@@ -243,7 +244,7 @@ p{
   
 .sidenav a {
     font-family: 'Roboto', sans-serif;
-    padding: 8px 8px 8px 32px;
+    padding: 20px 8px 20px 32px;
     text-decoration: none;
     text-align: center;
     font-size: 25px;
@@ -258,10 +259,15 @@ p{
   
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: -18;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sidenav strong a{
+    background-color: white;
+    color: #66ddaa;
 }
 
 strong {
