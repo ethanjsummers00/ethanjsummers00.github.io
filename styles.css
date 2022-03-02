@@ -4,7 +4,7 @@
 /*mobile width rules*/
 @media (max-width: 800px) {
 
-    .main {
+    main {
         flex-direction: column-reverse;
     }
 
@@ -138,14 +138,14 @@ h1 {
     padding: 1%;
 }
 
-.main {
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
 }
 
-.main h1, .main2 h1 {
+main h1, main2 h1 {
     font-size: 3em;
     color: #cb503c;
 }
