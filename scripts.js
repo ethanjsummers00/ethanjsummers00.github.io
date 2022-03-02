@@ -12,14 +12,14 @@ else {
 
 document.getElementById("myAge").innerHTML = age;
 
-var slideout = new Slideout({
-    'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),
-    'padding': 256,
-    'tolerance': 70
-  });
-
-  // Toggle button
-  document.querySelector('.toggle-button').addEventListener('click', function() {
-    slideout.toggle();
-  });
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
