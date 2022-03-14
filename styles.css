@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*roboto font from Google, icons from https://fontawesome.com/*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
@@ -88,6 +90,10 @@ body {
 .footLeft i {
     font-size: 1.5em;
     color: white;
+}
+
+.footLeft i:hover {
+    color: #d7a97c;
 }
 
 .footLeft p {
@@ -198,6 +204,12 @@ nav {
     color: #645e6b;
 }
 
+.navItem a:focus {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #66ddaa;
+}
+
 #navMenu {
     display: none;
     visibility: hidden;
@@ -253,15 +265,11 @@ p{
     transition: 0.3s;
 }
   
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
 .sidenav .closebtn {
     position: absolute;
     top: -18;
     right: 25px;
-    font-size: 36px;
+    font-size: 36px;    
     margin-left: 50px;
 }
 
