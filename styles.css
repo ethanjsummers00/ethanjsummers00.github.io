@@ -62,12 +62,9 @@ a:hover {
 body {
     margin: 0 auto;
     height: 100%;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -117,34 +114,18 @@ h1 {
     margin: 0 auto;
 }
 
-#linksHeader {
-    flex: 100%;
-    margin: 0 auto;
-    padding: 2%
-}
-
-#linksHeader small {
-    color: #645e6b;
-    padding-left: 5px;
-}
-
-#linksLeft{
-    flex: 50%;
+hgroup {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 1%;
-}
-
-#linksList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-family: 'Roboto', sans-serif;
-}
-
-#linksRight{
+    padding-top: 15%;
     flex: 50%;
-    text-align: center;
-    padding: 1%;
+    font-size: 1.5em;
+}
+
+#links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 50%;
 }
 
 main {
@@ -154,16 +135,9 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-main h1, main2 h1 {
+main h1 {
     font-size: 3em;
     color: #cb503c;
-}
-
-.main2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-family: 'Roboto', sans-serif;
 }
 
 #nameBar {
