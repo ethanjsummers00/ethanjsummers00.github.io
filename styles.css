@@ -3,40 +3,6 @@
 /*roboto font from Google, icons from https://fontawesome.com/*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
-/*mobile width rules*/
-@media (max-width: 800px) {
-
-    main {
-        flex-direction: column-reverse;
-    }
-
-    nav #nameBar > a {    
-        padding-left: 5%;
-        flex: 90%;
-    }
-
-    nav #navMenu {
-        display: flex;
-        visibility: visible;
-        padding: 3%;
-        flex: 10%;
-        color: #645e6b;
-    }
-
-    .navItem{
-        display: none;
-    }
-
-    #sideImg {
-        display: none;
-    }
-
-    .footer {
-        display: none;
-        visibility: hidden;
-    }
-  }
-
 /*global rules*/
 /*remember Ethan: padding is TRBL*/
 a {
@@ -73,45 +39,12 @@ body {
 footer {
     display: flex;
     flex-direction: row;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #66ddaa;
     font-family: 'Roboto', sans-serif;
     color: white;
-}
-
-.footLeft {
-    display: flex;
-    flex: 50%;
-    padding-left: 1%;
-}
-
-.footLeft p a {
-    font-size: 1.25em;
-    color: white;
-    margin-right: 0.33em;
-}
-
-.footLeft p a:hover {
-    color: #d7a97c;
-}
-
-.footRight {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex: 50%;
-    padding-right: 1%;
-}
-
-.footRight p {
-    margin: 0;
-    font-size: 1.25em;
-    justify-items: baseline;
-    text-align: end;
-    width: 100%;
 }
 
 h1 {
@@ -185,6 +118,11 @@ p{
     font-size: 1.5em;
 }
 
+#portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
 #profileImg {
     flex: 40%;
     padding-top: 7.5%;
@@ -252,3 +190,100 @@ strong {
     background-color: #66ddaa;
     color: white;
 }
+
+/* desktop width rules */
+@media (min-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+    }
+    
+    .footLeft {
+        display: flex;
+        flex: 50%;
+        padding-left: 1%;
+    }
+    
+    .footLeft p a {
+        font-size: 1.25em;
+        color: white;
+        margin-right: 0.33em;
+    }
+    
+    .footLeft p a:hover {
+        color: #d7a97c;
+    }
+    
+    .footRight {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 50%;
+        padding-right: 1%;
+    }
+    
+    .footRight p {
+        margin: 0;
+        font-size: 1.25em;
+        justify-items: baseline;
+        text-align: end;
+        width: 100%;
+    }
+
+}
+
+/*mobile width rules*/
+@media (max-width: 800px) {
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    nav #nameBar > a {    
+        padding-left: 5%;
+        flex: 90%;
+    }
+
+    nav #navMenu {
+        display: flex;
+        visibility: visible;
+        padding: 2%;
+        flex: 10%;
+        color: #000000;
+    }
+
+    .navItem{
+        display: none;
+    }
+
+    #sideImg {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footLeft {
+        display: flex;
+        flex: 100%;
+        padding-left: 1%;
+        justify-content: center;
+    }
+    
+    .footLeft p a {
+        font-size: 1.5em;
+        color: white;
+        margin-right: 0.33em;
+    }
+    
+    .footLeft p a:hover {
+        color: #d7a97c;
+    }
+    
+    .footRight {
+        display: none;
+        visibility: hidden;
+    }
+  }
