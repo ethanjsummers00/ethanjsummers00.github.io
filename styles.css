@@ -84,12 +84,12 @@ footer {
     padding-left: 1%;
 }
 
-.footLeft i {
-    font-size: 1.5em;
+.footLeft a {
+    font-size: 2em;
     color: white;
 }
 
-.footLeft i:hover {
+.footLeft a:hover {
     color: #d7a97c;
 }
 
@@ -106,20 +106,11 @@ footer {
 
 .footRight p {
     padding-right: 1%;
-    padding-top: 1.1%;
     font-size: 1.25em;
 }
 
 h1 {
     margin: 0 auto;
-}
-
-hgroup {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding-top: 15%;
-    flex: 50%;
-    font-size: 1.5em;
 }
 
 #links {
