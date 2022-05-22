@@ -79,34 +79,33 @@ footer {
 .footLeft {
     display: flex;
     flex: 50%;
-    flex-direction: row;
-    text-align: start;
     padding-left: 1%;
 }
 
-.footLeft a {
-    font-size: 2em;
+.footLeft p a {
+    font-size: 1.25em;
     color: white;
+    margin-right: 0.33em;
 }
 
-.footLeft a:hover {
+.footLeft p a:hover {
     color: #d7a97c;
 }
 
-.footLeft p {
-    padding-left: 1%;
-}
-
 .footRight {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     flex: 50%;
-    flex-direction: row;
-    text-align: end;
     padding-right: 1%;
 }
 
 .footRight p {
-    padding-right: 1%;
+    margin: 0;
     font-size: 1.25em;
+    justify-items: baseline;
+    text-align: end;
+    width: 100%;
 }
 
 h1 {
