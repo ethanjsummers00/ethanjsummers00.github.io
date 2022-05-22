@@ -48,6 +48,12 @@ a:hover {
     color: #868f97;
 }
 
+#aboutPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 #aboutText {
     flex: 60%;
     padding-left: 20px;
@@ -117,11 +123,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     flex: 50%;
 }
-
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -189,6 +191,10 @@ p{
     margin: auto;
     width: 400px;
     height: 600px;
+}
+
+#resume {
+    margin-left: 1%;
 }
 
 .selected {
