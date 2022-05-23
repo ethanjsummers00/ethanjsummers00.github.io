@@ -186,6 +186,17 @@ p{
     color: #66ddaa;
 }
 
+#socialMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1%;
+}
+
+#socialTitle {
+    
+}
+
+
 strong {
     background-color: #66ddaa;
     color: white;
