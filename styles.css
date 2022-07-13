@@ -5,13 +5,23 @@
 
 /*global rules*/
 /*remember Ethan: padding is TRBL*/
+
+/* color variables */
+:root {
+    --linkGray: #645e6b;
+    --hoverGray: #868f97;
+    --mint: #66ddaa;
+    --orange: #cb503c;
+    --hoverOrange: #b63d2a;
+}
+
 a {
     text-decoration: none;
-    color: #645e6b;
+    color: var(--linkGray);
 }
 
 a:hover {
-    color: #868f97;
+    color: var(--hoverGray);
 }
 
 #aboutPage {
@@ -42,9 +52,9 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #66ddaa;
+    background-color: var(--mint);
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #ffffff;
 }
 
 h1 {
@@ -66,7 +76,7 @@ main {
 
 main h1 {
     font-size: 3em;
-    color: #cb503c;
+    color: var(--orange);
 }
 
 #nameBar {
@@ -81,7 +91,7 @@ main h1 {
 
 #nameBar > a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 nav {
@@ -104,13 +114,13 @@ nav {
 .navItem {
     margin: 0 auto;
     text-align: right;
-    color: #645e6b;
+    color: var(--linkGray);
 }
 
 .navItem a:focus {
     border-width: 2px;
     border-style: solid;
-    border-color: #66ddaa;
+    border-color: var(--mint);
 }
 
 #navMenu {
@@ -140,11 +150,11 @@ p{
 }
 
 .selected {
-    color: white;
+    color: #ffffff;
 }
 
 .selected:hover {
-    color: white;
+    color: #ffffff;
 }
 
 #sideImg {
@@ -160,13 +170,12 @@ p{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #66ddaa;
+    background-color: var(--mint);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
 }
 
-.sidenav a {
+.sideLinks {
     font-family: 'Roboto', sans-serif;
     padding: 20px 8px 20px 32px;
     text-decoration: none;
@@ -175,14 +184,6 @@ p{
     color: white;
     display: block;
     transition: 0.3s;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: -18;
-    right: 25px;
-    font-size: 36px;    
-    margin-left: 50px;
 }
 
 .sidenav strong a{
@@ -198,6 +199,12 @@ strong {
 
 small {
     color: #645e6b;
+}
+
+.closebtn {
+    font-size: 3em;
+    color: #ffffff;
+    margin-left: 200px;
 }
 
 /* desktop width rules */
@@ -258,11 +265,11 @@ small {
         padding: 10% 0 10% 0;
         margin: 1% 0 1% 1%;
         border-radius: 25px;
-        background-color: #cb503c;
+        background-color: var(--orange);
     }
 
     .mediaPanel:hover {
-        background-color: #b63d2a;
+        background-color: var(--hoverOrange);
     }
 
     .mediaPanel p {
@@ -321,7 +328,7 @@ small {
     }
     
     .footLeft p a:hover {
-        color: #cb503c;
+        color: var(--orange);
     }
     
     .footRight {
