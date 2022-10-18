@@ -17,14 +17,20 @@ myAge();
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
     const footColor = document.querySelector('footer');
+    const aboutPageStatus = document.querySelector('#aboutPage');
+    const portfolioPageStatus = document.querySelector('#portfolioPage');
 
     if (document.getElementById("pageSwitch").checked == true) {
         strongColor.style.backgroundColor = "var(--blue)";
         footColor.style.backgroundColor = "var(--blue)";
+        aboutPageStatus.style.visibility = "hidden";
+        portfolioPageStatus.style.visibility = "visible";
     }
     else {
         strongColor.style.backgroundColor = "var(--orange)";
         footColor.style.backgroundColor = "var(--orange)";
+        aboutPageStatus.style.backgroundColor = "visible";
+        portfolioPageStatus.style.visibility = "hidden";
     }
 }
 
