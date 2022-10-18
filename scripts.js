@@ -3,14 +3,31 @@ var month = (new Date()).getMonth();
 var day = (new Date()).getDate();
 var age = 0;
 
-if (month >= 10){
-    age += year - 2021;
+function myAge() {
+    if (month >= 10) {
+        age += year - 2021;
+    }
+    else {
+        age = year - 2001;
+    }
+    document.getElementById("myAge").innerHTML = age;
 }
-else {
-    age = year - 2001;
+myAge();
+
+function pageSwitch() {
+    const strongColor = document.querySelector('strong');
+
+    if (document.getElementById("pageSwitch").checked == true) {
+        strongColor.style.backgroundColor = "var(--blue)";
+    }
+    else {
+        strongColor.style.backgroundColor = "var(--orange)";
+    }
+
+
+    console.log(strongColor);
 }
 
-document.getElementById("myAge").innerHTML = age;
 
 // function openNav() {
 //     document.getElementById("mySidenav").style.width = "250px";

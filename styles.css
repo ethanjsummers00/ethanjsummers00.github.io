@@ -19,6 +19,10 @@
     --orange: #F0654C;
 }
 
+body {
+    margin: auto;
+}
+
 #nameBar > a {
     text-decoration: none;
     color: #000000;
@@ -58,6 +62,23 @@ strong {
 
     #aboutPage img {
         width: 350px;
+    }
+
+    footer {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        background-color: var(--orange);
+        bottom: 0pt;
+        left: 0pt;
+    }
+
+    #footLeft {
+        flex: 50%;
+    }
+
+    #footRight {
+        flex: 50%;
     }
 
     input[type=checkbox] {
