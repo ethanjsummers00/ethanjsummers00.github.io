@@ -19,16 +19,6 @@
     --orange: #F0654C;
 }
 
-#nameBar {
-    /*background-color: #f1f1f1;*/
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 1%;
-    flex: 50%;
-    text-align: left;
-}
-
 #nameBar > a {
     text-decoration: none;
     color: #000000;
@@ -41,6 +31,8 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
     padding-bottom: 2%;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 
@@ -68,12 +60,82 @@ strong {
         width: 350px;
     }
 
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    h2 {
+        margin: 0 auto;
+        font-size: 0.75em;
+        font-weight: normal;
+        text-align: right;
+        position: absolute;
+        right: 115px;
+        top: 22px;
+
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 80px;
+        height: 40px;
+        background: var(--hoverGray);
+        display: block;
+        border-radius: 100px;
+        position: absolute;
+        top: 20px;
+        right: 1%;
+      }
+      
+    label:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 30px;
+        height: 30px;
+        background: #ffffff;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+      
+    input:checked + label {
+        background: var(--blue);
+      }
+      
+    input:checked + label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+      }
+
     main {
         padding-left: 1%;
         padding-right: 1%;
     }
+
+    #nameBar {
+        /*background-color: #f1f1f1;*/
+        padding-left: 1%;
+        flex: 50%;
+        text-align: left;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    #switchBar {
+        flex: 50%;
+    }
 }
 
 @media (max-width: 800px) {
-
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
 }
