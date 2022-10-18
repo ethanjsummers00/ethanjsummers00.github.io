@@ -16,16 +16,16 @@ myAge();
 
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
+    const footColor = document.querySelector('footer');
 
     if (document.getElementById("pageSwitch").checked == true) {
         strongColor.style.backgroundColor = "var(--blue)";
+        footColor.style.backgroundColor = "var(--blue)";
     }
     else {
         strongColor.style.backgroundColor = "var(--orange)";
+        footColor.style.backgroundColor = "var(--orange)";
     }
-
-
-    console.log(strongColor);
 }
 
 
