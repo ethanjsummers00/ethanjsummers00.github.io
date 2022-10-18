@@ -71,10 +71,18 @@ strong {
         font-size: 0.75em;
         font-weight: normal;
         text-align: right;
-        position: absolute;
-        right: 115px;
-        top: 22px;
+    }
 
+    h2:first-of-type {
+        position: absolute;
+        right: 250px;
+        top: 22px;
+    }
+
+    h2:last-of-type {
+        position: absolute;
+        right: 1%;
+        top: 22px;
     }
 
     label {
@@ -87,7 +95,7 @@ strong {
         border-radius: 100px;
         position: absolute;
         top: 20px;
-        right: 1%;
+        right: 150px;
       }
       
     label:after {
