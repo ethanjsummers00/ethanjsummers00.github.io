@@ -184,6 +184,13 @@ strong {
 
     #portfolioPage {
         display: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #portfolioPage h1{
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
     }
 
     #portfolioPage main {
