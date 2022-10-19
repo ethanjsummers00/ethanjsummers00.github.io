@@ -26,12 +26,13 @@ function pageSwitch() {
         aboutPageStatus.style.visibility = "hidden";
         portfolioPageStatus.style.visibility = "visible";
     }
-    else {
+    if (document.getElementById("pageSwitch").checked == false){
         strongColor.style.backgroundColor = "var(--orange)";
         footColor.style.backgroundColor = "var(--orange)";
-        aboutPageStatus.style.backgroundColor = "visible";
+        aboutPageStatus.style.visibility = "visible";
         portfolioPageStatus.style.visibility = "hidden";
     }
+    console.log(document.getElementById("pageSwitch").checked);
 }
 
 
