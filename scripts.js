@@ -17,19 +17,22 @@ myAge();
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
     const footColor = document.querySelector('footer');
-    const aboutPageStatus = document.querySelector('#aboutPage');
+    const aboutSectionStatus = document.querySelector('#aboutSection');
+    const resumeSectionStatus = document.querySelector('#resumeSection');
     const portfolioPageStatus = document.querySelector('#portfolioPage');
 
     if (document.getElementById("pageSwitch").checked == true) {
         strongColor.style.backgroundColor = "var(--blue)";
         footColor.style.backgroundColor = "var(--blue)";
-        aboutPageStatus.style.display = "none";
+        aboutSectionStatus.style.display = "none";
+        resumeSectionStatus.style.display = "none";
         portfolioPageStatus.style.display = "flex";
     }
     if (document.getElementById("pageSwitch").checked == false){
         strongColor.style.backgroundColor = "var(--orange)";
         footColor.style.backgroundColor = "var(--orange)";
-        aboutPageStatus.style.display = "flex";
+        aboutSectionStatus.style.display = "flex";
+        resumeSectionStatus.style.display = "flex";
         portfolioPageStatus.style.display = "none";
     }
     console.log(document.getElementById("pageSwitch").checked);
