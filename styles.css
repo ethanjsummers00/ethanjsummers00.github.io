@@ -7,8 +7,8 @@
 /*remember Ethan: padding is TRBL*/
 
 @keyframes fadeIn {
-    0% { color: var(--orange); }
-    100% { color: var(--blue); }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* color variables */
@@ -19,20 +19,9 @@
     --orange: #F0654C;
 }
 
-/* a {
-    text-decoration: none;
-    color: #000000;
-} */
-
 body {
     margin: auto;
 }
-
-#aboutSection h1 {
-    font-size: 1.5em;
-    color: var(--orange);
-}
-
 
 #nameBar > a {
     text-decoration: none;
@@ -57,22 +46,22 @@ strong {
 }
 
 @media (min-width: 800px) {
-    #aboutSection {
+    #aboutPage {
         display: flex;
         font-family: 'Roboto', sans-serif;
     }
 
-    #aboutSection aside {
+    #aboutPage aside {
         flex: 33%;
         padding-right: 1%;
     }
 
-    #aboutSection article {
+    #aboutPage article {
         font-size: 1.5em;
         align-self: top;
     }
 
-    #aboutSection img {
+    #aboutPage img {
         width: 350px;
     }
 
@@ -178,7 +167,7 @@ strong {
         padding-right: 1%;
     }
 
-    #aboutSection main {
+    #aboutPage main {
         visibility: visible;
     }
 
@@ -201,16 +190,11 @@ strong {
     #portfolioPage h1{
         font-size: 3em;
         text-align: center;
-        color: var(--blue);
         width: 100%;
     }
 
     #portfolioPage main {
         display: none;
-    }
-
-    #resumeSection {
-        display: flex;
     }
 
     #switchBar {
