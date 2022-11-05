@@ -128,6 +128,12 @@ strong {
         top: 22px;
     }
 
+    #hello {
+        margin-top: 0%;
+        font-size: 2em;
+        color: var(--orange);
+    }
+
     label {
         cursor: pointer;
         text-indent: -9999px;
