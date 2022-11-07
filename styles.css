@@ -59,16 +59,20 @@ strong {
     #aboutSection {
         display: flex;
         font-family: 'Roboto', sans-serif;
+        
     }
 
     #aboutSection aside {
         flex: 33%;
         padding-right: 1%;
+        align-items: center;
     }
 
     #aboutSection article {
         font-size: 1.5em;
         align-self: top;
+        margin-right: 10%;
+        margin-left: 1%;
     }
 
     #aboutSection h1 {
@@ -87,6 +91,11 @@ strong {
         bottom: 0pt;
         left: 0pt;
         font-family: 'Roboto', sans-serif;
+    }
+
+    #footLeft a:hover {
+        transition: color 0.25s;
+        color: var(--hoverGray);
     }
 
     #footLeft {
@@ -233,23 +242,35 @@ strong {
         grid-template-columns: repeat(3 , 1fr);
         width: 100%;
         font-family: 'Roboto', sans-serif;
+        margin-bottom: 10%;
     }
 
     #resumeSection h3 {
         margin: 0 auto;
-        font-size: 2em;
+        font-size: 3em;
     }
 
     #headBlock {
         text-align: center;
         font-size: 3em;
         color: var(--orange);
+        padding: 60px 0 60px 0;
     }
 
     .blockContent {
         display: block;
-        margin: auto;
+        grid-row: 2;
+        margin: 0;
+        text-align: center;
     }
+
+    .blockHeader {
+        text-align: center;
+        align-self: center;
+        grid-row: 1;
+        margin: 0;
+    }
+
 
     #blockOne {
         display: grid;
@@ -258,6 +279,7 @@ strong {
         justify-content: center;
         grid-column: 1;
         grid-row: 2;
+        max-height: 200px;
         margin: 0 10px 0 10px;
         border-radius: 10px;
         background-color: var(--orange);
@@ -269,7 +291,8 @@ strong {
         grid-template-rows: repeat(2 , 1fr);
         justify-content: center;
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 2;    
+        max-height: 200px;
         margin: 0 10px 0 10px;
         border-radius: 10px;
         background-color: var(--orange);

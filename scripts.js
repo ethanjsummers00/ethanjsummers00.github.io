@@ -14,6 +14,17 @@ function myAge() {
 }
 myAge();
 
+window.onscroll = function(){
+    var aboutSec = document.getElementById('aboutSection');
+    var resumeSec = document.getElementById('resumeSection');
+    if (document.documentElement.scrollTop < resumeSec.getBoundingClientRect) {
+        resumeSec.style.visibility = "hidden";
+    }
+    else {
+        resumeSec.style.visibility = "visible";
+    }
+}
+
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
     const footColor = document.querySelector('footer');
@@ -22,6 +33,8 @@ function pageSwitch() {
     const portfolioPageStatus = document.querySelector('#portfolioPage');
     const headBlock = document.querySelector('#headBlock');
 
+    /* idea for later - condense the changing color value into a css var and just change the value
+    of that instead of every elements BC value */
     if (document.getElementById("pageSwitch").checked == true) {
         strongColor.style.backgroundColor = "var(--blue)";
         footColor.style.backgroundColor = "var(--blue)";
@@ -40,6 +53,10 @@ function pageSwitch() {
     }
     console.log(document.getElementById("pageSwitch").checked);
 }
+
+
+
+
 
 
 // function openNav() {
