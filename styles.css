@@ -17,6 +17,7 @@
     --hoverGray: #868f97;
     --blue: #2AA5A8;
     --orange: #F0654C;
+    --switchingColor: var(--orange);
 }
 
 body {
@@ -42,7 +43,7 @@ nav {
 
 strong {
     color: #ffffff;
-    background-color: var(--orange);
+    background-color: var(--switchingColor);
 }
 
 @media (min-width: 800px) {
@@ -87,7 +88,7 @@ strong {
         position: fixed;
         display: flex;
         width: 100%;
-        background-color: var(--orange);
+        background-color: var(--switchingColor);
         bottom: 0pt;
         left: 0pt;
         font-family: 'Roboto', sans-serif;

@@ -34,9 +34,17 @@ function pageSwitch() {
     const resumeSectionStatus = document.querySelector("#resumeSection");
     const portfolioPageStatus = document.querySelector('#portfolioPage');
     const headBlock = document.querySelector('#headBlock');
+    const pageColor = document.documentElement;
 
     /* idea for later - condense the changing color value into a css var and just change the value
     of that instead of every elements BC value */
+    // if(document.getElementById("pageSwitch").checked == true){
+    //     pageColor.style.setProperty("--switchingColor", "--blue")
+    // }
+    // if(document.getElementById("pageSwitch").checked == false){
+    //     pageColor.style.setProperty("--switchingColor", "--orange")
+    // }
+
     if (document.getElementById("pageSwitch").checked == true) {
         strongColor.style.backgroundColor = "var(--blue)";
         footColor.style.backgroundColor = "var(--blue)";
@@ -53,6 +61,7 @@ function pageSwitch() {
         portfolioPageStatus.style.display = "none";
         headBlock.style.display = "block";
     }
+
     console.log(document.getElementById("pageSwitch").checked);
 }
 
