@@ -163,6 +163,10 @@ strong {
         color: var(--orange);
     }
 
+    .hideMe {
+        opacity: 0;
+    }
+
     label {
         cursor: pointer;
         text-indent: -9999px;

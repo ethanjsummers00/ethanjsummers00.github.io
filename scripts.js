@@ -1,11 +1,23 @@
 var year = (new Date()).getFullYear();
 var month = (new Date()).getMonth();
 var day = (new Date()).getDate();
-var age = 21;
+var age = 0;
+
+$( document ).ready(function(){
+    $(window).scroll( function(){
+        $('.hideMe').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+            }
+        }); 
+    });
+  });
 
 function myAge() {
     if (month >= 10) {
-        age += year - 2021;
+        age += year - 2000;
     }
     else {
         age = year - 2001;
@@ -14,16 +26,6 @@ function myAge() {
 }
 myAge();
 
-window.onscroll = function(){
-    var aboutSec = document.getElementById('aboutSection');
-    var resumeSec = document.getElementById('resumeSection');
-    if (document.documentElement.scrollTop < resumeSec.getBoundingClientRect) {
-        resumeSec.style.visibility = "hidden";
-    }
-    else {
-        resumeSec.style.visibility = "visible";
-    }
-}
 
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
