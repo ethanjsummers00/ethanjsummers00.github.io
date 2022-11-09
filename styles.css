@@ -22,6 +22,11 @@
 
 body {
     margin: auto;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 #nameBar > a {
@@ -164,9 +169,9 @@ strong {
         color: var(--orange);
     }
 
-    .hideMe {
+    /* .hideMe {
         opacity: 0;
-    }
+    } */
 
     label {
         cursor: pointer;
@@ -267,6 +272,7 @@ strong {
         grid-row: 2;
         margin: 0;
         text-align: center;
+        /* background-color: #2AA5A8; */
     }
 
     .blockHeader {
@@ -274,16 +280,16 @@ strong {
         align-self: center;
         grid-row: 1;
         margin: 0;
+        /* background-color: #2AA5A8; */
     }
 
 
     #blockOne {
         display: grid;
         grid-template-rows: repeat(2 , 1fr);
-        align-items: center;
         justify-content: center;
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 2;    
         max-height: 200px;
         margin: 0 10px 0 10px;
         border-radius: 10px;
@@ -310,6 +316,7 @@ strong {
         justify-content: center;
         grid-column: 3;
         grid-row: 2;
+        max-height: 200px;
         margin: 0 10px 0 10px;
         border-radius: 10px;
         background-color: var(--orange);
