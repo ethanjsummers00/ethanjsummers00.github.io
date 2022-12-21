@@ -57,32 +57,21 @@ strong {
         transition: background-color 0.5s;
     }
 
-    #about {
-        display: flex;
-        width: 100%;
-    }
-
     #aboutSection {
-        display: flex;
+        display: block;
         font-family: 'Roboto', sans-serif;
-        
-    }
-
-    #aboutSection aside {
-        flex: 33%;
-        padding-right: 1%;
-        align-items: center;
+        margin: 0 10% 0 10%;
+        text-align: center;
     }
 
     #aboutSection article {
         font-size: 1.5em;
-        align-self: top;
-        margin-right: 10%;
-        margin-left: 1%;
+        flex: 100%;
     }
 
     #aboutSection h1 {
         color: var(--orange);
+        font-size: 2.5em;
     }
 
     #aboutSection img {
