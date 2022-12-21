@@ -56,7 +56,7 @@ function pageSwitch() {
     if (document.getElementById("pageSwitch").checked == false){
         strongColor.style.backgroundColor = "var(--orange)";
         footColor.style.backgroundColor = "var(--orange)";
-        aboutSectionStatus.style.display = "flex";
+        aboutSectionStatus.style.display = "block";
         resumeSectionStatus.style.display = "grid";
         portfolioPageStatus.style.display = "none";
         headBlock.style.display = "block";
