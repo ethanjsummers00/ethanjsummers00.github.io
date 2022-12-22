@@ -345,11 +345,12 @@ strong {
 
     #portfolioPage {
         display: none;
+        flex-direction: column;
         font-family: 'Roboto', sans-serif;
     }
 
     #portfolioPage h1{
-        font-size: 3em;
+        font-size: 48px;
         text-align: center;
         width: 100%;
         color: var(--blue);
@@ -359,12 +360,16 @@ strong {
         display: none;
     }
 
-    #resumeSection {
-        display: grid;
-        grid-template-columns: repeat(3 , 1fr);
-        width: 100%;
-        font-family: 'Roboto', sans-serif;
-        margin-bottom: 10%;
+    .portfolioRow{
+        display: flex;
+    }
+
+    .rowLeft{
+        flex: 50%;
+    }
+
+    .rowRight{
+        flex: 50%;
     }
 
     #switchBar {
