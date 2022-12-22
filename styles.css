@@ -191,21 +191,14 @@ strong {
     }
 
     .expTitle{
-        display: flex;
+        /* display: flex; */
         width: 100%;
+        align-items: left;
     }
 
-    .expTitle p{
-        margin: auto;
-        flex: 50%;
-        font-style: italic;
-        text-align: right;
-    }
-
-    .expTitle svg{
-        /* margin: auto; */
-        flex: 50%;
-        
+    .expTitle p, .expTitle svg{
+        vertical-align: middle;
+        display: inline-block;
     }
 
     h3 {
