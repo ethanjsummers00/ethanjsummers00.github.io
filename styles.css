@@ -181,8 +181,7 @@ strong {
 
     .b, .c, .d{
         width: 100%;
-        height: 250px;
-        
+        min-height: 250px; 
     }
 
     .expDesc{
@@ -356,6 +355,10 @@ strong {
         color: var(--blue);
     }
 
+    #portfolioPage h3{
+        color: var(--blue);
+    }
+
     #portfolioPage main {
         display: none;
     }
@@ -365,10 +368,12 @@ strong {
     }
 
     .rowLeft{
+        display: flex;
         flex: 50%;
     }
 
     .rowRight{
+        display: flex;
         flex: 50%;
     }
 
