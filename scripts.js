@@ -30,7 +30,7 @@ myAge();
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
     const footColor = document.querySelector('footer');
-    const aboutSectionStatus = document.querySelector('#aboutSection');
+    const aboutSectionStatus = document.querySelector('#aboutPage');
     const portfolioPageStatus = document.querySelector('#portfolioPage');
     const headBlock = document.querySelector('#headBlock');
     // const pageColor = document.documentElement;

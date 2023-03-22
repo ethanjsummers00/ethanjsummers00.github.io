@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*roboto font from Google, icons from https://fontawesome.com/*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:ital@0;1&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -60,7 +60,8 @@ table {
     100% { opacity: 1; }
 }
 
-h1, h3 {
+h1, h3{
+    font-family: 'Comfortaa', cursive;
     font-weight: bold;
 }
 
@@ -86,6 +87,8 @@ html {
 
 #nameBar > a {
     text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    
     color: #000000;
 }
 
@@ -93,7 +96,8 @@ nav {
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    justify-self: center;
+    font-family: 'Poppins', sans-serif;;
     font-size: 2.5em;
     padding-bottom: 2%;
     padding-right: 10px;
@@ -103,7 +107,10 @@ nav {
 
 strong {
     color: #ffffff;
+    font-weight: bold;
     background-color: var(--switchingColor);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 @media (min-width: 800px) {
@@ -112,26 +119,40 @@ strong {
         transition: background-color 0.5s;
     }
 
-    #aboutSection {
+    #aboutPage {
         display: block;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;;
         margin: 0 10% 0 10%;
-        text-align: center;
+        
     }
 
-    #aboutSection article {
+    #aboutPage article {
         font-size: 1.5em;
         flex: 100%;
     }
 
-    #aboutSection h1 {
+    #aboutPage h1 {
         color: var(--orange);
         font-size: 60px;
         margin: 1% 0 1% 0;
     }
 
-    #aboutSection img {
+    #aboutPage img {
         width: 375px;
+    }
+
+    #aboutSection {
+        display: flex;
+    }
+
+    #aboutText{
+        flex: 66%;
+        text-align: left;
+    }
+
+    #aboutSection img{
+        flex: 33%;
+        align-self: center;
     }
 
     #aboutExperience {
@@ -143,7 +164,7 @@ strong {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 25px;
         grid-row-gap: 25px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;;
         margin: auto;
         text-align: center;
         max-height: 300px;
@@ -152,6 +173,7 @@ strong {
     .a{
         grid-row: 1;
         grid-column: 1/4;
+        text-align: center;
     }
 
     .b{
@@ -213,7 +235,7 @@ strong {
         display: flex;
         width: 100%;
         background-color: var(--switchingColor);
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;;
     }
 
     #footLeft a:hover {
@@ -229,8 +251,8 @@ strong {
     }
 
     #footLeft p {
-        padding-right: 10px;
-        font-size: 2em;
+        padding-right: 15px;
+        font-size: 2.5em;
         margin: 0;
     }
 
@@ -270,7 +292,7 @@ strong {
 
     h2:last-of-type {
         position: absolute;
-        right: 1%;
+        right: 0.5%;
         top: 22px;
     }
 
@@ -309,6 +331,10 @@ strong {
         transition: 0.3s;
     }
 
+    label:hover{
+        background: var(--hoverGray);
+    }
+
     input:checked + label {
         background: var(--blue);
     }
@@ -330,6 +356,7 @@ strong {
     #nameBar {
         /*background-color: #f1f1f1;*/
         padding-left: 1%;
+        padding-top: 0.25%;
         flex: 50%;
         text-align: left;
     }
@@ -345,11 +372,11 @@ strong {
     #portfolioPage {
         display: none;
         flex-direction: column;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Poppins', sans-serif;;
     }
 
     #portfolioPage h1{
-        font-size: 48px;
+        font-size: 60px;
         text-align: center;
         width: 100%;
         color: var(--blue);
@@ -364,17 +391,9 @@ strong {
     }
 
     .portfolioRow{
-        display: flex;
-    }
-
-    .rowLeft{
-        display: flex;
-        flex: 50%;
-    }
-
-    .rowRight{
-        display: flex;
-        flex: 50%;
+        margin: 0 auto;
+        display: grid;
+        flex: 100%;
     }
 
     #switchBar {
