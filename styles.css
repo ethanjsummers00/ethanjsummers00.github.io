@@ -127,13 +127,14 @@ strong {
     }
 
     #aboutPage article {
-        font-size: 1.5em;
+        font-size: 18px;
         flex: 100%;
+        margin-right: 5%;
     }
 
     #aboutPage h1 {
         color: var(--orange);
-        font-size: 60px;
+        font-size: 48px;
         margin: 1% 0 1% 0;
     }
 
@@ -146,12 +147,12 @@ strong {
     }
 
     #aboutText{
-        flex: 66%;
+        flex: 60%;
         text-align: left;
     }
 
     #aboutSection img{
-        flex: 33%;
+        flex: 40%;
         align-self: center;
     }
 
@@ -203,7 +204,7 @@ strong {
 
     .b, .c, .d{
         width: 100%;
-        min-height: 250px; 
+        min-height: 200px; 
     }
 
     .expDesc{
@@ -371,7 +372,6 @@ strong {
 
     #portfolioPage {
         display: none;
-        flex-direction: column;
         font-family: 'Poppins', sans-serif;;
     }
 
@@ -380,6 +380,7 @@ strong {
         text-align: center;
         width: 100%;
         color: var(--blue);
+        padding-bottom: 5%;
     }
 
     #portfolioPage h3{
@@ -390,11 +391,6 @@ strong {
         display: none;
     }
 
-    .portfolioRow{
-        margin: 0 auto;
-        display: grid;
-        flex: 100%;
-    }
 
     #switchBar {
         flex: 50%;
