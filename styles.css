@@ -509,13 +509,14 @@ strong {
         padding: 1% 0 1% 0;
         width: 100%;
         background-color: var(--switchingColor);
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins', sans-serif;
     }
 
     #footLeft {
         display: inline-flex;
-        align-items: center;
-        padding-left: 1%;
+        margin-left: 3%;
+        text-align: center;
+        width: 100%;
     }
 
     #footLeft p {
@@ -530,11 +531,6 @@ strong {
     }
 
     #footRight {
-        display: inline-flex;
-        justify-content: right;
-        align-items: center;
-        padding-right: 1%;
-        color: #ffffff;
-        font-size: 20px;
+        display: none;
     }
 }
