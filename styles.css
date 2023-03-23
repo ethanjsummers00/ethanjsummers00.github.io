@@ -127,9 +127,8 @@ strong {
     }
 
     #aboutPage article {
-        font-size: 18px;
+        font-size: 20px;
         flex: 100%;
-        margin-right: 5%;
     }
 
     #aboutPage h1 {
@@ -373,6 +372,9 @@ strong {
     #portfolioPage {
         display: none;
         font-family: 'Poppins', sans-serif;;
+        flex-direction: column;
+        justify-content: center;
+        
     }
 
     #portfolioPage h1{
@@ -381,6 +383,13 @@ strong {
         width: 100%;
         color: var(--blue);
         padding-bottom: 5%;
+        flex: 100%;
+    }
+
+    #portfolioPage h3{
+        font-size: 48px;
+        text-align: center;
+        color: var(--blue);
     }
 
     #portfolioPage h3{
@@ -391,9 +400,17 @@ strong {
         display: none;
     }
 
+    .portfolioSect{
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: var(--hoverGray);
+        border-radius: 30px;
+        padding: 2%;
+    }
 
     #switchBar {
         flex: 50%;
+        
         transition: background-color 0.5s;
     }
 }
