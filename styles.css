@@ -76,13 +76,16 @@ h1, h3{
 
 body {
     margin: auto;
-    height: 100%;
+    height:100vh;
+    width:100vw;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
 
 html {
-    height: 100%;
+    height:100vh;
+    width:100vw;
 }
 
 #nameBar > a {
@@ -113,7 +116,7 @@ strong {
     padding: 5px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
     *{
         transition: background-color 0.5s;
@@ -148,6 +151,10 @@ strong {
     #aboutText{
         flex: 60%;
         text-align: left;
+    }
+
+    #aboutText p{
+        margin-right: 10%;
     }
 
     #aboutSection img{
@@ -228,14 +235,21 @@ strong {
         margin: 3% 0 3% 0;
     }
 
+    #bottom{
+        height: 100px;
+        display: block;
+    }
+
 
     footer {
+        position: fixed;
         margin-top: auto;
         padding: 1% 0 1% 0;
         display: flex;
         width: 100%;
         background-color: var(--switchingColor);
         font-family: 'Poppins', sans-serif;;
+        bottom: 0px;
     }
 
     #footLeft a:hover {
@@ -410,15 +424,117 @@ strong {
 
     #switchBar {
         flex: 50%;
-        
         transition: background-color 0.5s;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     input[type=checkbox] {
         height: 0;
         width: 0;
         visibility: collapse;
+    }
+
+    #nameBar{
+        margin-left: 2%;
+    }
+
+    #switchBar {
+        display: none;
+    }
+
+    #aboutPage {
+        display: block;
+        font-family: 'Poppins', sans-serif;;
+        margin: 0 2% 0 2%;
+        
+    }
+
+    #aboutPage article {
+        font-size: 20px;
+    }
+
+    #aboutPage h1 {
+        color: var(--orange);
+        font-size: 32px;
+        margin: 5% 0 2% 0;
+    }
+
+    #aboutPage img {
+        display: none;
+    }
+
+    #aboutSection {
+        display: flex;
+    }
+
+    #aboutSection img{
+        flex: 40%;
+        align-self: center;
+    }
+
+    h3 {
+        color: var(--orange);
+        font-size: 24px;
+        margin: 3% 0 3% 0;
+    }
+
+    .a{
+        text-align: center;
+    }
+
+    .b, .c, .d{
+        grid-row: 1;
+        grid-column: 1;
+        background-color: var(--orange);
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 0 10px 15px 10px;
+        margin: 25px auto 25px auto;
+        max-width: 75%;
+    }
+
+    .expTitle{
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+    }
+
+    #portfolioPage{
+        display: none;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 1% 0 1% 0;
+        width: 100%;
+        background-color: var(--switchingColor);
+        font-family: 'Poppins', sans-serif;;
+    }
+
+    #footLeft {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 1%;
+    }
+
+    #footLeft p {
+        padding-right: 10px;
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #footLeft a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    #footRight {
+        display: inline-flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 1%;
+        color: #ffffff;
+        font-size: 20px;
     }
 }
