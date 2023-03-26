@@ -48,7 +48,7 @@ function pageSwitch() {
         strongColor.style.backgroundColor = "var(--blue)";
         footColor.style.backgroundColor = "var(--blue)";
         aboutSectionStatus.style.display = "none";
-        portfolioPageStatus.style.display = "flex";
+        portfolioPageStatus.style.display = "block";
         headBlock.style.display = "none";
     }
     if (document.getElementById("pageSwitch").checked == false){

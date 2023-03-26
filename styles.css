@@ -141,11 +141,15 @@ strong {
     }
 
     #aboutPage img {
-        width: 375px;
+        object-fit: cover;
+        /* border: var(--orange) solid 5px; */
+        border-radius: 50%;
+        width: 400px;
     }
 
     #aboutSection {
         display: flex;
+        animation: fadeIn 1s;
     }
 
     #aboutText{
@@ -175,6 +179,7 @@ strong {
         margin: auto;
         text-align: center;
         max-height: 300px;
+        animation: fadeIn 1s;
     }
 
     .a{
@@ -233,6 +238,7 @@ strong {
         color: var(--orange);
         font-size: 48px;
         margin: 3% 0 3% 0;
+        animation: fadeIn 1s;
     }
 
     #bottom{
@@ -386,9 +392,8 @@ strong {
     #portfolioPage {
         display: none;
         font-family: 'Poppins', sans-serif;;
-        flex-direction: column;
         justify-content: center;
-        
+        animation: fadeIn 1s;
     }
 
     #portfolioPage h1{
@@ -396,7 +401,6 @@ strong {
         text-align: center;
         width: 100%;
         color: var(--blue);
-        padding-bottom: 5%;
         flex: 100%;
     }
 
@@ -406,8 +410,10 @@ strong {
         color: var(--blue);
     }
 
-    #portfolioPage h3{
-        color: var(--blue);
+    #portfolioPage p{
+        font-size: 30px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     #portfolioPage main {
@@ -471,6 +477,14 @@ strong {
     #aboutSection img{
         flex: 40%;
         align-self: center;
+        opacity: 10%;
+    }
+
+    #aboutSection img .rounded{
+        object-fit: cover;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
     }
 
     h3 {
