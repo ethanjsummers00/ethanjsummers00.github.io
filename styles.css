@@ -108,12 +108,26 @@ nav {
 }
 
 
+p{
+    line-height: 1.25;
+}
+
+
 strong {
     color: #ffffff;
     font-weight: bold;
     background-color: var(--switchingColor);
     border-radius: 10px;
     padding: 5px;
+}
+
+hr{
+    width: 75%;
+    height: 5px;
+    background-color: var(--blue);
+    border: 0 none;
+    border-radius: 10px;
+    margin: 3% auto 3% auto;
 }
 
 @media (min-width: 900px) {
@@ -359,6 +373,7 @@ strong {
     main {
         padding-left: 1%;
         padding-right: 1%;
+        padding-bottom: 75px;
     }
 
     #aboutSection main {
@@ -379,7 +394,7 @@ strong {
 
     #portfolioPage {
         display: none;
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins', sans-serif;
         justify-content: center;
         animation: fadeIn 1s;
     }
