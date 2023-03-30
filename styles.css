@@ -262,6 +262,22 @@ hr{
         display: block;
     }
 
+    #resume a{
+        display: flex;
+        background-color: var(--orange);
+        color: #ffffff;
+        font-size: 2em;
+        max-width: 500px;
+        margin: auto auto 50px auto;
+        border-radius: 20px;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    #resume p {
+        color: #ffffff;
+        padding: 10px;
+    }
 
     footer {
         position: fixed;
