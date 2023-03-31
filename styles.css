@@ -130,6 +130,14 @@ hr{
     margin: 3% auto 3% auto;
 }
 
+/* #orn{
+    color: var(--orange);
+}
+
+#blu{
+    color: #000000;
+} */
+
 @media (min-width: 900px) {
 
     *{
@@ -262,6 +270,10 @@ hr{
         display: block;
     }
 
+    #resume{
+        animation: fadeIn 1s;
+    }
+
     #resume a{
         display: flex;
         background-color: var(--orange);
@@ -320,7 +332,7 @@ hr{
         align-items: center;
         padding-right: 1%;
         color: #ffffff;
-        font-size: 1.33em;
+        font-size: 2em;
     }
 
     input[type=checkbox] {
@@ -450,7 +462,7 @@ hr{
     }
 
     .portfolioEntry{
-        max-width: 1000px;
+        max-width: 800px;
         background-color: var(--hoverGray);
         border-radius: 30px;
         padding: 2%;
@@ -465,6 +477,56 @@ hr{
 
     .portfolioSect img{
         margin: 10px;
+    }
+
+    .portfolioSlider{
+        width: 100%;
+        max-width: 800px;
+        height: 800px;
+        position: relative;
+        margin: auto auto auto auto;
+        overflow: hidden;
+    }
+
+    .slide{
+        width: 100%;
+        max-width: 800px;
+        height: 800px;
+        position: absolute;
+        transition: all 0.5s;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+
+    .btn{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 50%;
+        z-index: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        font-size: 18px;
+    }
+
+    .btn:active{
+        transform: scale(1.1);
+    }
+    
+    .btn-prev{
+        top: 45%;
+        left: 2%;
+    }
+    
+    .btn-next{
+        top: 45%;
+        right: 2%;
     }
 
     #switchBar {

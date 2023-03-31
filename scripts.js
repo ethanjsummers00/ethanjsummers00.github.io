@@ -33,16 +33,6 @@ function pageSwitch() {
     const aboutSectionStatus = document.querySelector('#aboutPage');
     const portfolioPageStatus = document.querySelector('#portfolioPage');
     const headBlock = document.querySelector('#headBlock');
-    // const pageColor = document.documentElement;
-
-    /* idea for later - condense the changing color value into a css var and just change the value
-    of that instead of every elements BC value */
-    // if(document.getElementById("pageSwitch").checked == true){
-    //     pageColor.style.setProperty("--switchingColor", "--blue")
-    // }
-    // if(document.getElementById("pageSwitch").checked == false){
-    //     pageColor.style.setProperty("--switchingColor", "--orange")
-    // }
 
     if (document.getElementById("pageSwitch").checked == true) {
         strongColor.style.backgroundColor = "var(--blue)";
@@ -50,6 +40,8 @@ function pageSwitch() {
         aboutSectionStatus.style.display = "none";
         portfolioPageStatus.style.display = "block";
         headBlock.style.display = "none";
+        // document.getElementById("orn").style.color = "#000000";
+        // document.getElementById("blu").style.color = "var(--blue)";
     }
     if (document.getElementById("pageSwitch").checked == false){
         strongColor.style.backgroundColor = "var(--orange)";
@@ -57,22 +49,58 @@ function pageSwitch() {
         aboutSectionStatus.style.display = "block";
         portfolioPageStatus.style.display = "none";
         headBlock.style.display = "block";
+        // document.getElementById("orn").style.color = "var(--orange)";
+        // document.getElementById("blu").style.color = "#000000";
     }
 
     console.log(document.getElementById("pageSwitch").checked);
 }
 
+// image slides
+const slides = document.querySelectorAll(".slide");
 
+// loop through slides and set each slides translateX
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+});
 
+// select next slide button
+const nextSlide = document.querySelector(".btn-next");
 
+// current slide counter
+let curSlide = 0;
+// maximum number of slides
+let maxSlide = slides.length - 1;
 
+// add event listener and navigation functionality
+nextSlide.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+if (curSlide === maxSlide) {
+    curSlide = 0;
+} else {
+    curSlide++;
+}
 
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "250px";
-//     document.getElementById("main").style.marginLeft = "250px";
-// }
-  
-// function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-//     document.getElementById("main").style.marginLeft= "0";
-// }
+  //   move slide by -100%
+slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+});
+});
+
+// select next slide button
+const prevSlide = document.querySelector(".btn-prev");
+
+// add event listener and navigation functionality
+prevSlide.addEventListener("click", function () {
+  // check if current slide is the first and reset current slide to last
+if (curSlide === 0) {
+    curSlide = maxSlide;
+} else {
+    curSlide--;
+}
+
+  //   move slide by 100%
+slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+});
+});
