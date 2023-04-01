@@ -535,6 +535,10 @@ hr{
         flex: 50%;
         transition: background-color 0.5s;
     }
+
+    .fa-download{
+        margin-top: 6px;
+    }
 }
 
 @media (max-width: 900px) {
