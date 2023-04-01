@@ -81,6 +81,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    background-image: url("img/v880-kul-12.jpg");
 }
 
 html {
@@ -425,6 +426,7 @@ hr{
         font-family: 'Poppins', sans-serif;
         justify-content: center;
         animation: fadeIn 1s;
+        padding-bottom: 150px;
     }
 
     #portfolioPage h1{
