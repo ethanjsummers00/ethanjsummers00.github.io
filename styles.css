@@ -328,12 +328,16 @@ hr{
 
     #footRight {
         flex: 50%;
-        display: inline-flex;
-        justify-content: right;
+        display: block;
+        text-align: end;
         align-items: center;
         padding-right: 1%;
         color: #ffffff;
         font-size: 2em;
+    }
+
+    #footRight small{
+        font-size: 0.5em;
     }
 
     input[type=checkbox] {
