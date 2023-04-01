@@ -517,8 +517,13 @@ hr{
         border-radius: 50%;
         z-index: 10px;
         cursor: pointer;
-        background-color: #fff;
+        background-color: var(--linkGray);
         font-size: 18px;
+        color: #ffffff;
+    }
+
+    .btn:hover{
+        background-color: var(--hoverGray);
     }
 
     .btn:active{
