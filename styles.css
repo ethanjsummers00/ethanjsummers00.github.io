@@ -69,7 +69,7 @@ h1, h3{
 :root {
     --linkGray: #645e6b;
     --hoverGray: #868f97;
-    --blue: #2AA5A8;
+    --blue: #27b4cd;
     --orange: #F0654C;
     --switchingColor: var(--orange);
 }
