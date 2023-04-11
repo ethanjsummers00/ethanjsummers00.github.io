@@ -723,4 +723,52 @@ hr{
     #footRight {
         display: none;
     }
+
+    #portfolioPage{
+        visibility:hidden;
+    }
+
+    /* #portfolioPage h3{
+        font-size: 1.5em;
+        text-align: center;
+        color: var(--blue);
+    }
+
+    #portfolioPage h4{
+        font-size: 2em;
+        text-align: center;
+        font-family:'Comfortaa', cursive;
+        font-weight: bold;
+        color: var(--blue);
+        margin: 1%;
+    }
+
+    #portfolioPage p{
+        font-size: 1em;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #portfolioPage main {
+        display: none;
+    }
+
+    .portfolioEntry{
+        max-width: 300px;
+        background-color: var(--hoverGray);
+        border-radius: 30px;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
+    .portfolioSect{
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .portfolioSect img{
+        margin: 10px;
+    } */
 }
