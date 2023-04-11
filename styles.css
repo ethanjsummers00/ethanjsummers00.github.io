@@ -578,7 +578,7 @@ hr{
         margin-top: 1%;
     }
 
-    #switchBar h2{
+    #switchBar{
         display: none;
     }
 
@@ -691,6 +691,27 @@ hr{
         width: 36px;
     }
 
+    #resume{
+        animation: fadeIn 1s;
+    }
+
+    #resume a{
+        display: flex;
+        background-color: var(--orange);
+        color: #ffffff;
+        font-size: 1.5em;
+        max-width: 300px;
+        margin: auto auto 50px auto;
+        border-radius: 20px;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    #resume p {
+        color: #ffffff;
+        padding: 10px;
+    }
+
     #portfolioPage{
         display: none;
     }
@@ -701,23 +722,22 @@ hr{
         width: 100%;
         background-color: var(--switchingColor);
         font-family: 'Poppins', sans-serif;
-    }
-
-    #footLeft {
-        display: flex;
-        width: 100%;
-        margin: auto;
-    }
-
-    #footLeft p {
-        padding-right: 10px;
-        font-size: 32px;
         text-align: center;
     }
 
-    #footLeft a {
+    footer p{
+        display: inline;
+        font-size: 2em;
+    }
+
+    footer a {
+        padding-right: 10px;
         text-decoration: none;
         color: #ffffff;
+    }
+
+    #footLeft {
+        display: none;
     }
 
     #footRight {
