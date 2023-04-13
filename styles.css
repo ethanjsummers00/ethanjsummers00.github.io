@@ -493,7 +493,7 @@ hr{
         margin: 10px;
     }
 
-    .portfolioSlider{
+    /* .portfolioSlider{
         width: 100%;
         max-width: 800px;
         height: 800px;
@@ -514,7 +514,8 @@ hr{
         width: 100%;
         height: 100%;
         object-fit: scale-down;
-    }
+    } */
+
 
     .btn{
         position: absolute;
