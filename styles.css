@@ -190,6 +190,10 @@ hr{
         align-self: center;
     }
 
+    #titleMobile{
+        display: none;
+    }
+
     #aboutExperience {
         display: grid;
         /* grid-template:
@@ -338,6 +342,10 @@ hr{
 
     #footRight small{
         font-size: 0.5em;
+    }
+
+    .footMid{
+        display: none;
     }
 
     input[type=checkbox] {
@@ -638,20 +646,28 @@ hr{
     }
 
     #aboutPage img {
-        display: none;
+        object-fit: cover;
+        /* border: var(--orange) solid 5px; */
+        border-radius: 50%;
+        border: 4px solid var(--orange);
+        width: 125px;
     }
 
     #aboutSection {
         display: flex;
     }
 
-    #aboutSection img{
-        flex: 40%;
-        align-self: center;
-        opacity: 10%;
+    #helloMain, #imgMain{
+        display: none;
     }
 
-    #aboutSection img .rounded{
+    #titleMobile{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    #titleMobile img .rounded{
         object-fit: cover;
         border-radius: 50%;
         height: 100px;
