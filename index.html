@@ -8,6 +8,7 @@
         <link href="styles.css" rel="stylesheet" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
     </head>
     <body>
         <nav>
@@ -103,7 +104,29 @@
             <main id="portfolioPage">
                 <h1>Some of My Work</h1>
                 <h3>Battle of the Bands Site</h3>
-                
+                <div class="slideContainer">
+                    <div class="slide">
+                        <div class="slideNumber">1</div>
+                        <img src= "img/Home.png" width="800px">
+                    </div>
+                    <div class="slide">
+                        <div class="slideNumber">2</div>
+                        <img src= "img/Featured.png" width="800px">
+                    </div>
+                    <div class="slide">
+                        <div class="slideNumber">3</div>
+                        <img src= "img/Contact.png" width="800px">
+                    </div>
+
+                    <!-- Next and Previous icon to change images -->
+                    <a class="previous" onclick="moveSlides(-1)">
+                        <i class="fa fa-chevron-circle-left"></i>
+                    </a>
+                    <a class="next" onclick="moveSlides(1)">
+                        <i class="fa fa-chevron-circle-right"></i>
+                    </a>
+                </div>
+
                 <h4>Objectives</h4>
                 <p>
                     A senior capstone design project, I chose to develop a site for a Battle of the Bands music
