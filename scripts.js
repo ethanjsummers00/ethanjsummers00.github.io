@@ -72,8 +72,7 @@ var slideIndex = 1;
         var i;
         var totalslides =
             document.getElementsByClassName("slide");
-        var totaldots =
-            document.getElementsByClassName("footerdot");
+
          
         if (n > totalslides.length) {
             slideIndex = 1;
@@ -85,10 +84,6 @@ var slideIndex = 1;
         for (i = 0; i < totalslides.length; i++) {
             totalslides[i].style.display = "none";
         }
-        for (i = 0; i < totaldots.length; i++) {
-            totaldots[i].className =
-            totaldots[i].className.replace(" active", "");
-        }
+       
         totalslides[slideIndex - 1].style.display = "flex";
-        totaldots[slideIndex - 1].className += " active";
     }
