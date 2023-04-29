@@ -142,9 +142,22 @@ hr{
 @media (min-width: 900px) {
 
     .slideContainer {
-        max-width: 800px;
+        max-width: 1200px;
         position: relative;
         margin: auto;
+        /* background-color: var(--linkGray); */
+        height: 801px;
+    }
+
+    .slide{
+        display: flex;
+        height: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .slide{
+        animation: fadeIn 1s;
     }
 
     .next {
