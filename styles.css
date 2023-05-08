@@ -145,6 +145,7 @@ hr{
         max-width: 1200px;
         position: relative;
         margin: auto;
+<<<<<<< Updated upstream
         /* background-color: var(--linkGray); */
         height: 801px;
     }
@@ -158,6 +159,19 @@ hr{
 
     .slide, .slide2{
         animation: fadeIn 1s;
+=======
+        background-color: var(--linkGray);
+        height: 801px;
+    }
+
+    .slide{
+        display: inline-block;
+        height: 100%;
+    }
+
+    .slide img{
+        vertical-align: middle;
+>>>>>>> Stashed changes
     }
 
     .next {
