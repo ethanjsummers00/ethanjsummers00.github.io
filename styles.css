@@ -139,9 +139,9 @@ hr{
     color: #000000;
 } */
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 
-    .slideContainer, .slideContainer2{
+    .slideContainer {
         max-width: 1200px;
         position: relative;
         margin: auto;
@@ -150,14 +150,14 @@ hr{
         height: 801px;
     }
 
-    .slide, .slide2{
+    .slide{
         display: flex;
         height: 100%;
         margin: auto;
         align-items: center;
     }
 
-    .slide, .slide2{
+    .slide{
         animation: fadeIn 1s;
 =======
         background-color: var(--linkGray);
@@ -203,8 +203,19 @@ hr{
      /* Slider image number */
     .slideNumber {
         display: none;
+        /* background-color: var(--linkGray);
+        color: white;
+        border-radius: 25px;
+        right: 0;
+        opacity: .5;
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        position: absolute; */
     }
-
     .fa {
         font-size: 32px;
         color: var(--linkGray);
@@ -244,7 +255,7 @@ hr{
 
     #aboutPage h1 {
         color: var(--orange);
-        font-size: 3em;
+        font-size: 48px;
         margin: 1% 0 1% 0;
     }
 
@@ -259,7 +270,6 @@ hr{
     #aboutSection {
         display: flex;
         animation: fadeIn 1s;
-        align-items: center;
     }
 
     #aboutSection p {
@@ -584,6 +594,29 @@ hr{
         margin: 10px;
     }
 
+    /* .portfolioSlider{
+        width: 100%;
+        max-width: 800px;
+        height: 800px;
+        position: relative;
+        margin: auto auto auto auto;
+        overflow: hidden;
+    }
+
+    .slide{
+        width: 100%;
+        max-width: 800px;
+        height: 800px;
+        position: absolute;
+        transition: all 0.5s;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    } */
+
 
     .btn{
         position: absolute;
@@ -627,9 +660,7 @@ hr{
     }
 }
 
-
-
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     html{
         overflow-x: hidden;
     }
@@ -712,7 +743,7 @@ hr{
 
     #aboutPage h1 {
         color: var(--orange);
-        font-size: 2.5em;
+        font-size: 32px;
         margin: 5% 0 2% 0;
     }
 
@@ -878,11 +909,4 @@ hr{
     .portfolioSect img{
         margin: 10px;
     } */
-}
-
-@media (max-width: 1200px) and (min-width: 800px){
-    #aboutSection{
-        display: vlock;
-        animation: fadeIn 1s;
-    }
 }
