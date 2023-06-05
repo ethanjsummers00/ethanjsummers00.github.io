@@ -964,4 +964,20 @@ hr{
     .portfolioSect img{
         margin: 10px;
     } */
+
+    .caseContainer {
+        display: inline-grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px;
+        align-items: center; 
+        grid-template-areas: 
+          "case1"
+          "case2"
+          "case3"
+          "case4"
+          "case5"
+          "case6"
+          ". . ."; 
+      }
 }
