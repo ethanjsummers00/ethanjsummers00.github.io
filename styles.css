@@ -145,7 +145,6 @@ hr{
         max-width: 1200px;
         position: relative;
         margin: auto;
-<<<<<<< Updated upstream
         /* background-color: var(--linkGray); */
         height: 801px;
     }
@@ -159,19 +158,8 @@ hr{
 
     .slide{
         animation: fadeIn 1s;
-=======
         background-color: var(--linkGray);
         height: 801px;
-    }
-
-    .slide{
-        display: inline-block;
-        height: 100%;
-    }
-
-    .slide img{
-        vertical-align: middle;
->>>>>>> Stashed changes
     }
 
     .next {
@@ -548,21 +536,28 @@ hr{
         width: 100%;
         color: var(--blue);
         flex: 100%;
+        margin-bottom: 1em;
     }
 
     #portfolioPage h3{
         font-size: 2.5em;
         text-align: center;
-        color: var(--blue);
+        color: #ffffff;
     }
 
     #portfolioPage h4{
         font-size: 2em;
         text-align: center;
         font-family:'Comfortaa', cursive;
-        font-weight: bold;
-        color: var(--blue);
+        font-weight: 400;
+        color: #ffffff;
+        transition: 0.5s;
         margin: 1%;
+    }
+
+    #portfolioPage h4:hover{
+        transition: 0.5s;
+        color: var(--blue);
     }
 
     #portfolioPage p{
@@ -595,21 +590,87 @@ hr{
     }
 
     .caseContainer {
-        display: grid; 
+        display: inline-grid; 
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
+        gap: 0px 0px;
+        align-items: center; 
         grid-template-areas: 
           "case1 case2 case3"
           "case4 case5 case6"
           ". . ."; 
       }
-      .case1 { grid-area: case1; }
-      .case2 { grid-area: case2; }
-      .case3 { grid-area: case3; }
-      .case4 { grid-area: case4; }
-      .case5 { grid-area: case5; }
-      .case6 { grid-area: case6; }
+
+      .caseContainer > div{
+        min-height: 300px;
+        transition: 0.75s;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .caseContainer a {
+        text-decoration: none;
+      }
+
+      .caseContainer div:hover{
+        transition: 0.75s;
+        background-size: 110%;
+        color: var(--blue);
+      }
+
+      .case1 { 
+        grid-area: case1; 
+        background-image: url(img/Home.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+        border-radius: 20px 0 0 0;
+      }
+      .case2 { 
+        grid-area: case2;
+        background-image: url(img/shed.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+     }
+      .case3 { 
+        grid-area: case3;
+        background-image: url(img/catalyst.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.3);
+        background-repeat: no-repeat;
+        border-radius: 0 20px 0 0;
+    }
+      .case4 { 
+        grid-area: case4; 
+        background-image: url(img/podMark.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+        border-radius: 0 0 0 20px;
+    }
+      .case5 { 
+        grid-area: case5;
+        background-image: url(img/swig.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+     }
+      .case6 {
+        grid-area: case6;
+        background-image: url(img/article1.jpg); 
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.3);
+        background-repeat: no-repeat;
+        border-radius: 0 0 20px 0;
+    }
 
 
     .btn{
