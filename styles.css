@@ -594,28 +594,22 @@ hr{
         margin: 10px;
     }
 
-    /* .portfolioSlider{
-        width: 100%;
-        max-width: 800px;
-        height: 800px;
-        position: relative;
-        margin: auto auto auto auto;
-        overflow: hidden;
-    }
-
-    .slide{
-        width: 100%;
-        max-width: 800px;
-        height: 800px;
-        position: absolute;
-        transition: all 0.5s;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: scale-down;
-    } */
+    .caseContainer {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "case1 case2 case3"
+          "case4 case5 case6"
+          ". . ."; 
+      }
+      .case1 { grid-area: case1; }
+      .case2 { grid-area: case2; }
+      .case3 { grid-area: case3; }
+      .case4 { grid-area: case4; }
+      .case5 { grid-area: case5; }
+      .case6 { grid-area: case6; }
 
 
     .btn{
