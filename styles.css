@@ -60,7 +60,7 @@ table {
     100% { opacity: 1; }
 }
 
-h1, h3{
+h1, h2, h3, h4{
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
 }
@@ -82,6 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("img/v880-kul-12.jpg");
+    
 }
 
 html {
@@ -92,7 +93,6 @@ html {
 #nameBar > a {
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
-    
     color: #000000;
 }
 
@@ -101,7 +101,7 @@ nav {
     flex-direction: row;
     text-align: center;
     justify-self: center;
-    font-family: 'Poppins', sans-serif;;
+    
     font-size: 2.5em;
     padding-bottom: 2%;
     padding-right: 10px;
@@ -109,8 +109,9 @@ nav {
 }
 
 
-p{
+p, small{
     line-height: 1.25;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -129,6 +130,10 @@ hr{
     border: 0 none;
     border-radius: 10px;
     margin: 3% auto 3% auto;
+}
+
+#email{
+    font-size: 0.75em;
 }
 
 /* #orn{
@@ -158,7 +163,6 @@ hr{
 
     .slide{
         animation: fadeIn 1s;
-        background-color: var(--linkGray);
         height: 801px;
     }
 
@@ -236,7 +240,7 @@ hr{
 
     #aboutPage {
         display: block;
-        font-family: 'Poppins', sans-serif;;
+        
         margin: 0 10% 0 10%;
         
     }
@@ -292,7 +296,7 @@ hr{
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 25px;
         grid-row-gap: 25px;
-        font-family: 'Poppins', sans-serif;;
+        
         margin: auto;
         text-align: center;
         max-height: 300px;
@@ -392,7 +396,7 @@ hr{
         display: flex;
         width: 100%;
         background-color: var(--switchingColor);
-        font-family: 'Poppins', sans-serif;;
+        
         bottom: 0px;
     }
 
@@ -471,8 +475,8 @@ hr{
         display: block;
         border-radius: 100px;
         position: absolute;
-        top: 20px;
-        right: 150px;
+        top: 15px;
+        right: 155px;
     }
 
     label:after {
@@ -518,19 +522,39 @@ hr{
         text-align: left;
     }
 
+    #return{
+        flex: 50%;
+    }
+
+    #return a{
+        text-decoration: none;
+        color: #000000;
+        transition: 0.25s;
+    }
+
+    #return a:hover{
+        color: var(--hoverGray);
+        transition: 0.25s;
+    }
+
     nav {
         display: flex;
     }
 
     #portfolioPage {
         display: none;
-        font-family: 'Poppins', sans-serif;
         justify-content: center;
         animation: fadeIn 1s;
         padding-bottom: 150px;
     }
 
-    #portfolioPage h1{
+    #casePage{
+        justify-content: center;
+        animation: fadeIn 1s;
+        padding-bottom: 150px;
+    }
+
+    #portfolioPage h1, #casePage h1{
         font-size: 3.5em;
         text-align: center;
         width: 100%;
@@ -548,7 +572,7 @@ hr{
     #portfolioPage h4{
         font-size: 2em;
         text-align: center;
-        font-family:'Comfortaa', cursive;
+        
         font-weight: 400;
         color: #ffffff;
         transition: 0.5s;
@@ -560,8 +584,9 @@ hr{
         color: var(--blue);
     }
 
-    #portfolioPage p{
+    #portfolioPage p, #casePage p{
         font-size: 1.75em;
+        
         max-width: 1000px;
         margin: 0 auto;
         text-align: center;
@@ -569,6 +594,15 @@ hr{
 
     #portfolioPage main {
         display: none;
+    }
+
+    #casePage h4{
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bold;
+        color: var(--blue);
+        transition: 0.5s;
+        margin: 1%;
     }
 
     .portfolioEntry{
@@ -591,6 +625,7 @@ hr{
 
     .caseContainer {
         display: inline-grid; 
+        max-height: 600px;
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 0px 0px;
@@ -731,7 +766,7 @@ hr{
         flex-direction: row;
         text-align: center;
         justify-self: center;
-        font-family: 'Poppins', sans-serif;;
+        
         font-size: 1.75em;
         padding-bottom: 2%;
         padding-right: 10px;
@@ -744,6 +779,10 @@ hr{
     }
 
     #switchBar{
+        display: block;
+    }
+
+    #switchBar h2{
         display: none;
     }
 
@@ -787,7 +826,7 @@ hr{
 
     #aboutPage {
         display: block;
-        font-family: 'Poppins', sans-serif;;
+        
         margin: 0 2% 0 2%;
         
     }
@@ -894,7 +933,7 @@ hr{
         padding: 1% 0 1% 0;
         width: 100%;
         background-color: var(--switchingColor);
-        font-family: 'Poppins', sans-serif;
+        
         text-align: center;
     }
 
@@ -918,66 +957,92 @@ hr{
     }
 
     #portfolioPage{
-        visibility:hidden;
+        visibility: hidden;
     }
-
-    /* #portfolioPage h3{
-        font-size: 1.5em;
-        text-align: center;
-        color: var(--blue);
-    }
-
-    #portfolioPage h4{
-        font-size: 2em;
-        text-align: center;
-        font-family:'Comfortaa', cursive;
-        font-weight: bold;
-        color: var(--blue);
-        margin: 1%;
-    }
-
-    #portfolioPage p{
-        font-size: 1em;
-        max-width: 1000px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #portfolioPage main {
-        display: none;
-    }
-
-    .portfolioEntry{
-        max-width: 300px;
-        background-color: var(--hoverGray);
-        border-radius: 30px;
-        padding: 2%;
-        margin: 0 auto;
-    }
-
-    .portfolioSect{
-        max-width: 1000px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .portfolioSect img{
-        margin: 10px;
-    } */
 
     .caseContainer {
-        display: inline-grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px;
-        align-items: center; 
-        grid-template-areas: 
-          "case1"
-          "case2"
-          "case3"
-          "case4"
-          "case5"
-          "case6"
-          ". . ."; 
+        display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "case1"
+    "case2"
+    "case3"
+    "case4"
+    "case5"
+    "case6"; 
+  align-items: center; 
       }
+
+      .caseContainer > div{
+        min-height: 300px;
+        transition: 0.75s;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .caseContainer a {
+        text-decoration: none;
+      }
+
+      .caseContainer div:hover{
+        transition: 0.75s;
+        background-size: 110%;
+        color: var(--blue);
+      }
+
+      .case1 { 
+        grid-area: case1; 
+        background-image: url(img/Home.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+        border-radius: 20px 0 0 0;
+      }
+      .case2 { 
+        grid-area: case2;
+        background-image: url(img/shed.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+     }
+      .case3 { 
+        grid-area: case3;
+        background-image: url(img/catalyst.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.3);
+        background-repeat: no-repeat;
+        border-radius: 0 20px 0 0;
+    }
+      .case4 { 
+        grid-area: case4; 
+        background-image: url(img/podMark.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+        border-radius: 0 0 0 20px;
+    }
+      .case5 { 
+        grid-area: case5;
+        background-image: url(img/swig.png);
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.5);
+        background-repeat: no-repeat;
+     }
+      .case6 {
+        grid-area: case6;
+        background-image: url(img/article1.jpg); 
+        background-size: 100%;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.3);
+        background-repeat: no-repeat;
+        border-radius: 0 0 20px 0;
+    }
 }
