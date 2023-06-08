@@ -26,7 +26,27 @@ function myAge() {
 }
 myAge();
 
+// keeps pageSwitch state on refresh
+$(function(){
+    var test = localStorage.input === 'true'? true: false;
+    $('input').prop('checked', test || false);
+});
 
+$('input').on('change', function() {
+    localStorage.input = $(this).is(':checked');
+    console.log($(this).is(':checked'));
+});
+
+// keeps index page state on refresh
+$(document).ready(function(){
+    $('input[type=checkbox]').each(function(i,x) {
+        if ($(x).is(':checked')) {
+            pageSwitch();
+        }   
+    });
+  });
+
+// changes color and page content depending on the state of the switch
 function pageSwitch() {
     const strongColor = document.querySelector('strong');
     const footColor = document.querySelector('footer');
