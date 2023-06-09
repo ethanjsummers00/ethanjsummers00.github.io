@@ -628,6 +628,11 @@ hr{
         margin: 1%;
     }
 
+    .appy{
+        width: 100%;
+        text-align: center;
+    }
+
     .portfolioEntry{
         max-width: 800px;
         background-color: var(--hoverGray);
@@ -644,6 +649,10 @@ hr{
 
     .portfolioSect img{
         margin: 10px;
+    }
+
+    .portfolioP{
+        margin: 0 auto;
     }
 
     .caseContainer {
