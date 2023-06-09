@@ -372,8 +372,12 @@ hr{
         display: block;
     }
 
-    #resume{
+    #resume, #porfolio{
         animation: fadeIn 1s;
+    }
+
+    #portfolio{
+        margin-top: 1em;
     }
 
     #resume a{
@@ -388,9 +392,22 @@ hr{
         text-decoration: none;
     }
 
-    #resume p {
+    #portfolio a{
+        display: flex;
+        background-color: var(--blue);
+        color: #ffffff;
+        font-size: 1.25em;
+        max-width: 500px;
+        margin: auto auto 50px auto;
+        border-radius: 20px;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    #resume p, #portfolio p {
         color: #ffffff;
         padding: 10px;
+        margin: 0;
     }
 
     footer {
@@ -590,9 +607,8 @@ hr{
 
     #portfolioPage p, #casePage p{
         font-size: 1.75em;
-        
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 0;
         text-align: center;
     }
 
