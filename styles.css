@@ -377,7 +377,7 @@ hr{
     }
 
     #portfolio{
-        margin-top: 1em;
+        margin-top: 3em;
     }
 
     #resume a{
@@ -402,6 +402,10 @@ hr{
         border-radius: 20px;
         justify-content: center;
         text-decoration: none;
+    }
+
+    #portfolio p:first-of-type, #resume p:first-of-type{
+        margin-top: 5px;
     }
 
     #resume p, #portfolio p {
@@ -566,7 +570,7 @@ hr{
         display: none;
         justify-content: center;
         animation: fadeIn 1s;
-        padding-bottom: 150px;
+        /* padding-bottom: 150px; */
     }
 
     #casePage{
@@ -608,7 +612,6 @@ hr{
     #portfolioPage p, #casePage p{
         font-size: 1.75em;
         max-width: 1000px;
-        margin: 0;
         text-align: center;
     }
 
@@ -645,7 +648,7 @@ hr{
 
     .caseContainer {
         display: inline-grid; 
-        max-height: 600px;
+        max-height: 500px;
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 0px 0px;
@@ -657,7 +660,7 @@ hr{
       }
 
       .caseContainer > div{
-        min-height: 300px;
+        min-height: 250px;
         transition: 0.75s;
         display: grid;
         justify-content: center;
@@ -763,10 +766,6 @@ hr{
     #switchBar {
         flex: 50%;
         transition: background-color 0.5s;
-    }
-
-    .fa-download{
-        margin-top: 6px;
     }
 }
 
