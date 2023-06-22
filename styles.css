@@ -625,6 +625,11 @@ hr{
         display: none;
     }
 
+    #casePage a{
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
     #casePage h4{
         font-size: 2.5em;
         text-align: center;
@@ -659,6 +664,18 @@ hr{
 
     .portfolioP{
         margin: 0 auto;
+    }
+
+    .portfolioA{
+        margin: 0 auto;
+        text-decoration: none;
+        color: var(--linkGray);
+        transition: 0.5s;
+    }
+
+    .portfolioA:hover{
+        color: var(--hoverGray);
+        transition: 0.5s;
     }
 
     .caseContainer {
@@ -729,10 +746,11 @@ hr{
     }
       .case5 { 
         grid-area: case5;
-        background-image: url(img/swig.png);
+        background-image: url(img/logos.jpg);
         background-size: 100%;
         background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.5);
+        background-position: 0%;
+        background-color: rgba(0,0,0,0.6);
         background-repeat: no-repeat;
      }
       .case6 {
