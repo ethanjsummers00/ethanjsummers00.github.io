@@ -132,6 +132,12 @@ hr{
     margin: 3% auto 3% auto;
 }
 
+#vid{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
 #email{
     font-size: 0.75em;
 }
