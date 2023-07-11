@@ -145,10 +145,13 @@ em:hover{
     font-size: 0.75em;
 }
 
+.none:hover{
+    color: #645e6b;
+}
+
 .orange{
     color: #ffffff;
     background-color: var(--orange);
-    transition: 0.5s;
     border-radius: 10px;
 }
 
@@ -287,6 +290,7 @@ hr{
 
     *{
         transition: background-color 0.5s;
+        transition: border-radius 0.5s;
     }
 
     #aboutPage {
@@ -853,6 +857,13 @@ hr{
         padding: 0 0.5em 0 0.5em;
         vertical-align: middle;
         font-size: 0.75em;
+    }
+
+    #contactPage h1 {
+        color: var(--purple);
+        font-size: 48px;
+        margin: 1% 0 1% 0;
+        text-align: center;
     }
 }
 
