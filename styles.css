@@ -621,6 +621,13 @@ hr{
         /* padding-bottom: 150px; */
     }
 
+    #contactPage {
+        display: none;
+        justify-content: center;
+        animation: fadeIn 1s;
+        /* padding-bottom: 150px; */
+    }
+
     #casePage{
         justify-content: center;
         animation: fadeIn 1s;
