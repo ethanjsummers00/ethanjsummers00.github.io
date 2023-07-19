@@ -218,14 +218,14 @@ label{
 
 input, textarea{
     font-size: 1.5em;
-    border-radius: 5px;
+    border-radius: 10px;
     border-style: solid;
     outline: none;
     transition: border-color 0.25s;
 }
 
 .textInput{
-    min-width: 400px;
+    min-width: 300px;
 }
 
 textarea{
