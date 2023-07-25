@@ -11,6 +11,7 @@ var month = (new Date()).getMonth();
 var day = (new Date()).getDate();
 var age = 0;
 
+
 // $( document ).ready(function(){
 //     $(window).scroll( function(){
 //         $('.hideMe').each( function(i){
@@ -53,33 +54,6 @@ $(document).ready(function(){
         }   
     });
   });
-
-// changes color and page content depending on the state of the switch
-// function pageSwitch() {
-//     let pageNum = 0;
-
-
-//     if (document.getElementById("pageSwitch").checked == true) {
-//         strongColor.style.backgroundColor = "var(--blue)";
-//         footColor.style.backgroundColor = "var(--blue)";
-//         aboutSectionStatus.style.display = "none";
-//         portfolioPageStatus.style.display = "block";
-//         headBlock.style.display = "none";
-//         // document.getElementById("orn").style.color = "#000000";
-//         // document.getElementById("blu").style.color = "var(--blue)";
-//     }
-//     if (document.getElementById("pageSwitch").checked == false){
-//         strongColor.style.backgroundColor = "var(--orange)";
-//         footColor.style.backgroundColor = "var(--orange)";
-//         aboutSectionStatus.style.display = "block";
-//         portfolioPageStatus.style.display = "none";
-//         headBlock.style.display = "block";
-//         // document.getElementById("orn").style.color = "var(--orange)";
-//         // document.getElementById("blu").style.color = "#000000";
-//     }
-
-//     console.log(document.getElementById("pageSwitch").checked);
-// }
 
 document.getElementById('aboutTab').onclick = function() {
     strongColor.style.backgroundColor = "var(--orange)";
