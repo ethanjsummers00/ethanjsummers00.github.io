@@ -12,17 +12,21 @@ var day = (new Date()).getDate();
 var age = 0;
 
 
-// $( document ).ready(function(){
-//     $(window).scroll( function(){
-//         $('.hideMe').each( function(i){
-//             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-//             var bottom_of_window = $(window).scrollTop() + $(window).height();
-//             if( bottom_of_window > bottom_of_object ){
-//                 $(this).animate({'opacity':'1'},500);
-//             }
-//         }); 
-//     });
-//   });
+$(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $(".tag");
+  
+    for (var i = 0; i < tags.length; i++) {
+      var tag = tags[i];
+  
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass("visible");
+      } else {
+        $(tag).removeClass("visible");
+      }
+    }
+  });
 
 function myAge() {
     if (month >= 10) {

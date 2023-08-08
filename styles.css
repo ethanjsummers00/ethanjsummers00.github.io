@@ -71,6 +71,7 @@ h1, h2, h3, h4{
     --hoverGray: #000000;
     --blue: #27b4cd;
     --hoverBlue: #81c2ce;
+    --clearBlue: rgba(39, 180, 205, 0.75);
     --orange: #F0654C;
     --hoverOrange: #e2857c;
     --purple: #5f4aaf;
@@ -257,6 +258,17 @@ input:focus, textarea:focus{
     background-color: var(--hoverPurple);
     transition: background-color 0.25s;
 }
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+  }
+  
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 
 @media (min-width: 900px) {
 
@@ -493,6 +505,8 @@ input:focus, textarea:focus{
         margin-top: 3em;
     }
 
+
+
     #resume a{
         display: flex;
         background-color: var(--orange);
@@ -519,6 +533,10 @@ input:focus, textarea:focus{
 
     #portfolio p:first-of-type, #resume p:first-of-type{
         margin-top: 5px;
+    }
+
+    #portfolio p:hover{
+        color: var(--hoverGray);
     }
 
     #resume p, #portfolio p {
@@ -807,7 +825,7 @@ input:focus, textarea:focus{
     }
       .case4 { 
         grid-area: case4; 
-        background-image: url(img/podMark.png);
+        background-image: url(img/Desktop\ -\ 2.png);
         background-size: 100%;
         background-blend-mode: multiply;
         background-color: rgba(0,0,0,0.5);
@@ -831,6 +849,21 @@ input:focus, textarea:focus{
         background-color: rgba(0,0,0,0.3);
         background-repeat: no-repeat;
         border-radius: 0 0 20px 0;
+    }
+
+    .caseTitle{
+        margin: auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .caseTitle a{
+        margin: 0 auto;
+    }
+
+    .caseTitle h4{
+        background-color: var(--clearBlue);
+        border-radius: 20px;
     }
 
 
@@ -1066,6 +1099,8 @@ input:focus, textarea:focus{
     #portfolioPage{
         visibility: hidden;
     }
+
+
 
     .caseContainer {
         display: grid; 
