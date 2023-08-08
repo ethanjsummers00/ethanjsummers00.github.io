@@ -522,6 +522,7 @@ input:focus, textarea:focus{
     #portfolio a{
         display: flex;
         background-color: var(--blue);
+        transition: background-color 0.25s;
         color: #ffffff;
         font-size: 1.25em;
         max-width: 500px;
@@ -535,14 +536,15 @@ input:focus, textarea:focus{
         margin-top: 5px;
     }
 
-    #portfolio p:hover{
-        color: var(--hoverGray);
-    }
-
     #resume p, #portfolio p {
         color: #ffffff;
         padding: 10px;
         margin: 0;
+    }
+
+    #portfolio a:hover {
+        background-color: var(--hoverBlue);
+        transition: background-color 0.25s;
     }
 
     footer {
@@ -769,6 +771,7 @@ input:focus, textarea:focus{
     .caseContainer {
         display: inline-grid; 
         max-height: 500px;
+        padding-bottom: 50px;
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 0px 0px;
@@ -862,8 +865,7 @@ input:focus, textarea:focus{
     }
 
     .caseTitle h4{
-        background-color: var(--clearBlue);
-        border-radius: 20px;
+        white-space: nowrap;
     }
 
 
