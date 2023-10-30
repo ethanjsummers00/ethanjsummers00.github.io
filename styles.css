@@ -259,7 +259,7 @@ input:focus, textarea:focus{
     transition: background-color 0.25s;
 }
 
-.tag {
+/* .tag {
     opacity: 0;
     transform: translate(0, 10vh);
     transition: all 1s;
@@ -268,7 +268,7 @@ input:focus, textarea:focus{
 .tag.visible {
     opacity: 1;
     transform: translate(0, 0);
-  }
+  } */
 
 @media (min-width: 900px) {
 
