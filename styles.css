@@ -446,14 +446,12 @@ input:focus, textarea:focus{
         color: #ffffff;
         border-radius: 20px;
         width: 100%;
-        height: 15em;
         margin: auto;
     }
 
     .expTitle{
         /* display: flex; */
         width: 100%;
-        padding: 5px;
         font-size: 1.75em;
         align-items: left;
     }
