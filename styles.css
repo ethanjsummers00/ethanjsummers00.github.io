@@ -108,9 +108,7 @@ nav {
     justify-self: center;
     
     font-size: 2.5em;
-    padding-bottom: 2%;
-    padding-right: 10px;
-    padding-top: 10px;
+    margin: 1% 0 3% 0;
 }
 
 
@@ -270,7 +268,7 @@ input:focus, textarea:focus{
     transform: translate(0, 0);
   } */
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) { */
 
     .slideContainer {
         max-width: 1200px;
@@ -384,13 +382,14 @@ input:focus, textarea:focus{
         object-fit: cover;
         /* border: var(--orange) solid 5px; */
         border-radius: 50%;
-        border: 4px solid var(--orange);
+        border: 8px solid var(--orange);
         width: 400px;
+        animation: fadeIn 1s;
     }
 
     #aboutSection {
         display: flex;
-        animation: fadeIn 1s;
+        margin: 0 0 3% 0;
     }
 
     #aboutSection p {
@@ -471,14 +470,6 @@ input:focus, textarea:focus{
     #bottom{
         height: 100px;
         display: block;
-    }
-
-    #resume, #porfolio{
-        animation: fadeIn 1s;
-    }
-
-    #portfolio{
-        margin-top: 3em;
     }
 
 
@@ -625,123 +616,6 @@ input:focus, textarea:focus{
     #return a:hover{
         color: var(--hoverGray);
         transition: 0.25s;
-    }
-
-    nav {
-        display: flex;
-    }
-
-    #portfolioPage {
-        display: none;
-        justify-content: center;
-        animation: fadeIn 1s;
-        /* padding-bottom: 150px; */
-    }
-
-    #contactPage {
-        display: none;
-        justify-content: center;
-        animation: fadeIn 1s;
-        /* padding-bottom: 150px; */
-    }
-
-    #casePage{
-        justify-content: center;
-        animation: fadeIn 1s;
-        padding-bottom: 150px;
-    }
-
-    #portfolioPage h1, #casePage h1{
-        font-size: 48px;
-        text-align: center;
-        width: 100%;
-        color: var(--blue);
-        flex: 100%;
-        margin-bottom: 1em;
-    }
-
-    #portfolioPage h3{
-        font-size: 2.5em;
-        text-align: center;
-        color: #ffffff;
-    }
-
-    #portfolioPage h4{
-        font-size: 2em;
-        text-align: center;
-        
-        font-weight: 400;
-        color: #ffffff;
-        transition: 0.5s;
-        margin: 1%;
-    }
-
-    #portfolioPage h4:hover{
-        transition: 0.5s;
-        color: var(--blue);
-    }
-
-    #portfolioPage p, #casePage p{
-        font-size: 1.75em;
-        max-width: 1000px;
-        text-align: center;
-    }
-
-    #portfolioPage main {
-        display: none;
-    }
-
-    #casePage a{
-        text-decoration: none;
-        font-size: 1.5em;
-    }
-
-    #casePage h4{
-        font-size: 2.5em;
-        text-align: center;
-        font-weight: bold;
-        color: var(--blue);
-        transition: 0.5s;
-        margin: 1%;
-    }
-
-    .appy{
-        width: 100%;
-        text-align: center;
-    }
-
-    .portfolioEntry{
-        max-width: 800px;
-        background-color: var(--hoverGray);
-        border-radius: 30px;
-        padding: 2%;
-        margin: 0 auto;
-    }
-
-    .portfolioSect{
-        max-width: 1000px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .portfolioSect img{
-        margin: 10px;
-    }
-
-    .portfolioP{
-        margin: 0 auto;
-    }
-
-    .portfolioA{
-        margin: 0 auto;
-        text-decoration: none;
-        color: var(--linkGray);
-        transition: 0.5s;
-    }
-
-    .portfolioA:hover{
-        color: var(--hoverGray);
-        transition: 0.5s;
     }
 
     .caseContainer {
@@ -904,263 +778,4 @@ input:focus, textarea:focus{
         margin: 1% 0 1% 0;
         text-align: center;
     }
-}
-
-@media (max-width: 900px) {
-    html{
-        overflow-x: hidden;
-    }
-
-    input[type=checkbox] {
-        height: 0;
-        width: 0;
-        visibility: collapse;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-self: center;
-        
-        font-size: 1.75em;
-        padding-bottom: 2%;
-        padding-right: 10px;
-        padding-top: 10px;
-    }
-
-    #nameBar{
-        margin-left: 2%;
-        margin-top: 1%;
-    }
-
-    #switchBar{
-        display: none;
-    }
-
-    #switchBar h2{
-        display: none;
-    }
-
-    #aboutPage {
-        display: block;
-        
-        margin: 0 2% 0 2%;
-        
-    }
-
-    #aboutPage article {
-        font-size: 16px;
-    }
-
-    #aboutPage h1 {
-        color: var(--orange);
-        font-size: 32px;
-        margin: 5% 0 2% 0;
-    }
-
-    #aboutPage img {
-        object-fit: cover;
-        /* border: var(--orange) solid 5px; */
-        border-radius: 50%;
-        border: 4px solid var(--orange);
-        width: 125px;
-    }
-
-    #aboutSection {
-        display: flex;
-    }
-
-    #helloMain, #imgMain{
-        display: none;
-    }
-
-    #titleMobile{
-        display: block;
-        text-align: center;
-        margin: auto;
-    }
-
-    #titleMobile img .rounded{
-        object-fit: cover;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-    }
-
-    h3 {
-        color: var(--orange);
-        font-size: 24px;
-        margin: 25px 0 0 0;
-    }
-
-    .a{
-        text-align: center;
-    }
-
-    .b, .c, .d{
-        grid-row: 1;
-        grid-column: 1;
-        background-color: var(--orange);
-        color: #ffffff;
-        border-radius: 20px;
-        padding: 0 10px 15px 10px;
-        margin: 25px auto 25px auto;
-        max-width: 75%;
-    }
-
-    .expTitle{
-        display: flex;
-        align-items: center;
-        margin: auto;
-        font-weight: bolder;
-    }
-
-    .expTitle svg{
-        height: 36px;
-        width: 36px;
-    }
-
-    #resume{
-        animation: fadeIn 1s;
-        display: flex;
-    }
-
-    #resume a{
-        background-color: var(--orange);
-        color: #ffffff;
-        font-size: 1.5em;
-        max-width: 300px;
-        border-radius: 20px;
-        text-decoration: none;
-    }
-
-    #resume p {
-        color: #ffffff;
-        padding: 10px;
-    }
-
-    #portfolioPage{
-        display: none;
-    }
-
-    footer {
-        margin-top: auto;
-        padding: 1% 0 1% 0;
-        width: 100%;
-        background-color: var(--switchingColor);
-        
-        text-align: center;
-    }
-
-    footer p{
-        display: inline;
-        font-size: 2em;
-    }
-
-    footer a {
-        padding-right: 10px;
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    #footLeft {
-        display: none;
-    }
-
-    #footRight {
-        display: none;
-    }
-
-    #portfolioPage{
-        visibility: hidden;
-    }
-
-
-
-    .caseContainer {
-        display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "case1"
-    "case2"
-    "case3"
-    "case4"
-    "case5"
-    "case6"; 
-  align-items: center; 
-      }
-
-      .caseContainer > div{
-        min-height: 300px;
-        transition: 0.75s;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .caseContainer a {
-        text-decoration: none;
-      }
-
-      .caseContainer div:hover{
-        transition: 0.75s;
-        background-size: 110%;
-        color: var(--blue);
-      }
-
-      .case1 { 
-        grid-area: case1; 
-        background-image: url(img/Home.png);
-        background-size: 100%;
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.5);
-        background-repeat: no-repeat;
-        border-radius: 20px 0 0 0;
-      }
-      .case2 { 
-        grid-area: case2;
-        background-image: url(img/shed.png);
-        background-size: 100%;
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.5);
-        background-repeat: no-repeat;
-     }
-      .case3 { 
-        grid-area: case3;
-        background-image: url(img/catalyst.png);
-        background-size: 100%;
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.3);
-        background-repeat: no-repeat;
-        border-radius: 0 20px 0 0;
-    }
-      .case4 { 
-        grid-area: case4; 
-        background-image: url(img/podMark.png);
-        background-size: 100%;
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.5);
-        background-repeat: no-repeat;
-        border-radius: 0 0 0 20px;
-    }
-      .case5 { 
-        grid-area: case5;
-        background-image: url(img/swig.png);
-        background-size: 100%;
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.5);
-        background-repeat: no-repeat;
-     }
-      .case6 {
-        grid-area: case6;
-        background-image: url(img/article1.jpg); 
-        background-size: 100%;
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,0.3);
-        background-repeat: no-repeat;
-        border-radius: 0 0 20px 0;
-    }
-}
+/* } */
