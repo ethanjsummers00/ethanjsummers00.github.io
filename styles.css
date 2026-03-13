@@ -80,14 +80,12 @@ h1, h2, h3, h4{
 }
 
 body {
-    margin: auto;
     height:100vh;
     width:100vw;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     background-image: url("img/v880-kul-12.jpg");
-    
 }
 
 html {
@@ -354,8 +352,9 @@ input:focus, textarea:focus{
 
     #aboutPage {
         display: block;
-        margin: 0 5% 0 5%;
+        margin: auto 5% auto 5%;
         animation: fadeIn 1s;
+        max-width: 1500px;
     }
 
     h1 {
@@ -401,37 +400,24 @@ input:focus, textarea:focus{
     }
 
     #aboutExperience {
-        display: grid;
-        /* grid-template:
-            ".a .a .a"
-            ".b .c .d"; */
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 25px;
-        grid-row-gap: 25px;
-        
-        margin: 0 0 1% 0;
+        display: flex;
+        flex-direction: row;
+        grid-column-gap: 1%;
+        margin: 0 0 3% 0;
         text-align: center;
-        max-height: 300px;
         animation: fadeIn 1s;
     }
 
     .expBox{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
         background-color: var(--orange);
         color: #ffffff;
         border-radius: 20px;
-        height: 200px;
+        min-height: 200px;
         width: 100%;
-        margin: auto;
         padding: 5px;
     }
 
     .expTitle{
-        /* display: flex; */
         width: 100%;
         font-size: 1.75em;
         align-items: left;
@@ -462,8 +448,8 @@ input:focus, textarea:focus{
         background-color: var(--orange);
         color: #ffffff;
         font-size: 2em;
-        min-width: 300px;
-        max-width: 500px;
+        min-width: 400px;
+        max-width: 600px;
         margin: auto auto 50px auto;
         border-radius: 20px;
         justify-content: center;
@@ -570,10 +556,11 @@ input:focus, textarea:focus{
         top: 22px;
     }
 
-    main {
+    /* main {
         padding-bottom: 75px;
-        margin: 0 1% 0 1%;
-    }
+        margin: auto 1% auto 1%;
+        max-width: 1500px;
+    } */
 
     #aboutSection main {
         visibility: visible;
