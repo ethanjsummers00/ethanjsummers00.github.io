@@ -84,6 +84,7 @@ body {
     width:100vw;
     overflow-x: hidden;
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-image: url("img/v880-kul-12.jpg");
 }
@@ -363,7 +364,13 @@ input:focus, textarea:focus{
         margin: 0 0 1.5% 0;
     }
 
-    #aboutPage img {
+    h2 {
+        color: var(--orange);
+        font-size: 2rem;
+        margin: 0 0 1.5% 0;
+    }
+
+    #aboutSection img {
         object-fit: cover;
         /* border: var(--orange) solid 5px; */
         border-radius: 50%;
@@ -456,19 +463,6 @@ input:focus, textarea:focus{
         text-decoration: none;
     }
 
-    #portfolio a{
-        display: flex;
-        background-color: var(--blue);
-        transition: background-color 0.25s;
-        color: #ffffff;
-        font-size: 1.25em;
-        max-width: 500px;
-        margin: auto auto 50px auto;
-        border-radius: 20px;
-        justify-content: center;
-        text-decoration: none;
-    }
-
     /* #portfolio p:first-of-type, #resume p:first-of-type{
         margin-top: 5px;
     } */
@@ -479,9 +473,8 @@ input:focus, textarea:focus{
         margin: 0;
     }
 
-    #portfolio a:hover {
-        background-color: var(--hoverBlue);
-        transition: background-color 0.25s;
+    .portfolioEntry {
+        margin: 0 0 1% 0;
     }
 
     footer {
@@ -535,25 +528,6 @@ input:focus, textarea:focus{
 
     .footMid{
         display: none;
-    }
-
-    h2 {
-        margin: 0 auto;
-        font-size: 0.75em;
-        font-weight: normal;
-        text-align: right;
-    }
-
-    h2:first-of-type {
-        position: absolute;
-        right: 250px;
-        top: 22px;
-    }
-
-    h2:last-of-type {
-        position: absolute;
-        right: 0.5%;
-        top: 22px;
     }
 
     /* main {
