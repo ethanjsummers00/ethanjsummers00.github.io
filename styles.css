@@ -370,6 +370,11 @@ input:focus, textarea:focus{
         margin: 0 0 1.5% 0;
     }
 
+    h3 {
+        color: var(#ffffff);
+        font-size: 1.75rem;
+    }
+
     #aboutSection img {
         object-fit: cover;
         /* border: var(--orange) solid 5px; */
@@ -430,15 +435,9 @@ input:focus, textarea:focus{
         align-items: left;
     }
 
-    .expTitle p, .expTitle svg{
+    .expTitle h3, .expTitle svg{
         vertical-align: middle;
         display: inline-block;
-    }
-
-    h3 {
-        color: var(--orange);
-        font-size: 48px;
-        margin: 3% 0 1.5% 0;
     }
 
     #bottom{
