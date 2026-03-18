@@ -80,18 +80,13 @@ h1, h2, h3, h4{
 }
 
 body {
-    height:100vh;
-    width:100vw;
+    /* height:100vh;
+    width:100vw; */
     overflow-x: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-image: url("img/v880-kul-12.jpg");
-}
-
-html {
-    height:100vh;
-    width:100vw;
 }
 
 #nameBar > a {
@@ -473,7 +468,18 @@ input:focus, textarea:focus{
     }
 
     .portfolioEntry {
-        margin: 0 0 1% 0;
+        margin: 0 0 3% 0;
+    }
+
+    .portfolioContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .portfolioContent img {
+        max-width: 25%;
+        margin-right: 5%;
     }
 
     footer {
@@ -721,5 +727,138 @@ input:focus, textarea:focus{
         font-size: 48px;
         margin: 1% 0 1% 0;
         text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+    main {
+        margin: 0 2% 0 2%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        text-align: end;
+        justify-self: center;
+        margin: 2% 0 10% 0;
+        font-size: 2rem;
+    }
+
+    #aboutSection {
+        display: block;
+        margin: 0% 0 10% 0;
+    }
+
+    #aboutSection p, #aboutExperience p {
+        font-size: 1.2rem;
+    }
+
+    #aboutText{
+        text-align: left;
+    }
+
+    #aboutText p{
+        margin-right: 10%;
+    }
+
+    #aboutSection img {
+        display: none;
+    }
+
+    h1 {
+        color: var(--orange);
+        font-size: 2rem;
+        margin: 0 0 3% 0;
+    }
+
+    h2 {
+        color: var(--orange);
+        font-size: 2rem;
+        margin: 0 0 1.5% 0;
+    }
+
+    h3 {
+        color: var(#ffffff);
+        font-size: 1.5rem;
+    }
+
+    #aboutExperience {
+        display: flex;
+        flex-direction: column;
+        grid-column-gap: 1%;
+        margin: 0 0 3% 0;
+        text-align: center;
+        animation: fadeIn 1s;
+    }
+
+    .expBox{
+        background-color: var(--orange);
+        color: #ffffff;
+        border-radius: 20px;
+        min-height: 150px;
+        max-width: 500px;
+        padding: 5px;
+        margin: 0 1% 3% 1%;
+    }
+
+    .expTitle{
+        font-size: 1.75em;
+        align-items: left;
+    }
+
+    .expTitle h3, .expTitle svg{
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #resume {
+        display: none;
+    }
+
+    footer {
+        /* position: fixed; */
+        display: block;
+        width: 100%;
+        background-color: var(--switchingColor);
+        
+        bottom: 0px;
+    }
+
+    #footLeft a:hover {
+        transition: color 0.25s;
+        color: var(--hoverGray);
+    }
+
+    #footLeft {
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        max-width: 250px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footLeft p {
+        font-size: 3em;
+        flex: 33%;
+    }
+
+    #footLeft a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    #footRight {
+        display: block;
+        text-align: center;
+        align-items: center;
+        padding-right: 1%;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+
+    #footRight small{
+        font-size: 0.5em;
     }
 }
