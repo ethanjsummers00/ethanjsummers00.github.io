@@ -90,20 +90,40 @@ body {
     margin-bottom: 100px;
 }
 
-#nameBar > a {
-    text-decoration: none;
-    font-family: 'Comfortaa', cursive;
-    color: #000000;
-}
-
 nav {
     display: flex;
     flex-direction: row;
     text-align: end;
     justify-self: center;
     
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 1% 0 3% 0;
+}
+#nameBar {
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+}
+
+#nameTag {
+    margin-right: 10%;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+}
+
+#navMenu a {
+    margin: 0 10% 0 10%;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    color: var(--orange);
 }
 
 
@@ -376,7 +396,7 @@ input:focus, textarea:focus{
         /* border: var(--orange) solid 5px; */
         border-radius: 50%;
         border: 8px solid var(--orange);
-        width: 400px;
+        width: 350px;
     }
 
     #aboutSection {
@@ -496,8 +516,8 @@ input:focus, textarea:focus{
     }
 
     #footLeft a:hover {
-        transition: color 0.25s;
-        color: var(--hoverGray);
+        transition: color 0.5s;
+        color: var(--hoverOrange);
     }
 
     #footLeft {
@@ -757,13 +777,6 @@ input:focus, textarea:focus{
         font-size: 1.2rem;
     }
 
-    #aboutText{
-        text-align: left;
-    }
-
-    #aboutText p{
-        margin-right: 10%;
-    }
 
     #aboutSection img {
         display: none;
